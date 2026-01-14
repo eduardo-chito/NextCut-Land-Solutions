@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+      <meta charset="utf-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <title>Land Clearing | NextCut Land Solutions</title>
+      <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+      <!-- TOP BAR -->
+      <header class="topbar">
+            <div class="container topbar-inner">
+                  <div class="topbar-brand">
+                        <span class="company-name">NextCut Land Solutions</span>
+                  </div>
+                  <div class="topbar-actions">
+                        <a class="btn btn-primary" href="tel:+14783028815">Call Now</a>
+                  </div>
+            </div>
+      </header>
+      <!-- NAV -->
+      <nav aria-label="Primary navigation" class="navbar">
+            <div class="container nav-inner">
+                  <!-- Logo -->
+                  <a aria-label="NextCut Land Solutions" class="logo" href="index.html">
+                        <img alt="NextCut Land Solutions logo" class="logo-img" src="Logo\See Through Logo.png" />
+                  </a>
+                  <!-- Mobile button -->
+                  <button aria-expanded="false" aria-label="Open menu" class="hamburger" id="hamburger">
+                        <span></span><span></span><span></span>
+                  </button>
+                  <!-- Links -->
+                  <ul class="navlinks" id="navlinks">
+                        <li><a class="navlink" href="index.html">Home</a></li>
+                        <li><a class="navlink" href="about.html">About Us</a></li>
+                        <!-- Dropdown: Tree Services (kept as-is, points to that page) -->
+                        <li class="dropdown" data-dropdown="">
+                              <button aria-expanded="false" aria-haspopup="true" class="navlink dropbtn" type="button">
+                                    Tree Services <span class="caret">▾</span>
+                              </button>
+                              <div aria-label="Tree Services Menu" class="dropdown-menu" role="menu">
+                                    <a href="tree-services.html#tree-removal" role="menuitem">Tree Removal</a>
+                                    <a href="tree-services.html#tree-trimming" role="menuitem">Tree Trimming</a>
+                                    <a href="tree-services.html#stump-grinding" role="menuitem">Stump Grinding</a>
+                                    <a href="tree-services.html#cleanup" role="menuitem">Cleanup / Haul-Off</a>
+                              </div>
+                        </li>
+                        <!-- Dropdown: Land Clearing (anchors on THIS page) -->
+                        <li class="dropdown" data-dropdown="">
+                              <button aria-expanded="false" aria-haspopup="true" class="navlink dropbtn" type="button">
+                                    Land Clearing <span class="caret">▾</span>
+                              </button>
+                              <div aria-label="Land Clearing Menu" class="dropdown-menu" role="menu">
+                                    <a href="#forestry-mulching" role="menuitem">Forestry Mulching</a>
+                                    <a href="#lot-clearing" role="menuitem">Lot Clearing</a>
+                                    <a href="#brush-clearing" role="menuitem">Brush Clearing</a>
+                                    <a href="#driveway-culvert" role="menuitem">Driveway/Culvert</a>
+                              </div>
+                        </li>
+                        <li><a class="navlink" href="index.html#dumpster">Hard Scaping</a></li>
+                        <li class="nav-cta">
+                              <a class="btn btn-primary" href="#schedule">Schedule Now</a>
+                        </li>
+                  </ul>
+            </div>
+            <!-- Red strip under nav -->
+            <div aria-hidden="true" class="red-strip"></div>
+      </nav>
+      <!-- HERO -->
+      <main aria-label="Land Clearing" class="hero">
+            <div class="container hero-inner">
+                  <div class="hero-content">
+                        <p class="badge">Locally Owned • Fast Response • Free On-Site Walkthrough</p>
+                        <h1>Land Clearing</h1>
+                        <h2>
+                              Forestry Mulching • Lot Clearing • Brush Clearing • Driveway/Culvert
+                        </h2>
+                        <p class="hero-text">
+                              NextCut Land Solutions helps landowners and contractors clear, reclaim, and prep property
+                              the right way.
+                              Whether you need overgrowth mulched, a lot opened up for a new build, a fence line
+                              cleared, or access improved,
+                              we focus on safe work, clean results, and a finished look you’ll be proud of.
+                        </p>
+                        <div class="hero-actions">
+                              <a class="btn btn-primary btn-lg" href="#schedule">Schedule A Walkthrough</a>
+                              <a class="btn btn-outline btn-lg" href="tel:+14783028815">Call (478) 302-8815</a>
+                        </div>
+                        <div class="quick-info">
+                              <div class="info-card">
+                                    <strong>Best For</strong>
+                                    <span>Overgrown lots, new builds, trails, fence lines, and driveway access</span>
+                              </div>
+                              <div class="info-card">
+                                    <strong>Service Area</strong>
+                                    <span>Middle Georgia &amp; Surrounding Areas</span>
+                              </div>
+                        </div>
+                  </div>
+                  <!-- Right card -->
+                  <aside aria-label="Request a walkthrough" class="quote-card">
+                        <h3>Get a Fast Response</h3>
+                        <p>Tell us what you need — we’ll reach out ASAP.</p>
+                        <form class="form"
+                              onsubmit="event.preventDefault(); alert('Connect this to your email/CRM/booking tool.');">
+                              <label>
+                                    Name
+                                    <input placeholder="Your name" required="" type="text" />
+                              </label>
+                              <label>
+                                    Phone
+                                    <input placeholder="(###) ###-####" required="" type="tel" />
+                              </label>
+                              <label>
+                                    Service
+                                    <select required="">
+                                          <option value="">Select a service</option>
+                                          <option>Forestry Mulching</option>
+                                          <option>Lot Clearing</option>
+                                          <option>Brush Clearing</option>
+                                          <option>Driveway/Culvert</option>
+                                    </select>
+                              </label>
+                              <label>
+                                    Notes
+                                    <textarea
+                                          placeholder="Acreage, access, what you want cleared, and your deadline (if any)"
+                                          rows="4"></textarea>
+                              </label>
+                              <button class="btn btn-primary" type="submit">Request Walkthrough</button>
+                              <p class="small">
+                                    Prefer calling? <a href="tel:+14783028815">(478) 302-8815</a>
+                              </p>
+                        </form>
+                  </aside>
+            </div>
+      </main>
+      <!-- FORESTRY MULCHING -->
+      <section class="section" id="forestry-mulching">
+            <div class="container">
+                  <h2>Forestry Mulching</h2>
+                  <p>
+                        Forestry mulching is a fast way to knock down brush, saplings, and light timber without hauling
+                        everything off.
+                        We use equipment that grinds vegetation into mulch on the ground, helping control regrowth and
+                        leaving a cleaner finish
+                        than pushing and piling.
+                  </p>
+                  <p style="margin-top:10px;">
+                        <strong>Great for:</strong> reclaiming overgrown property, maintaining hunting land, cutting
+                        trails, clearing fence lines,
+                        reducing fire risk, and opening up lots without major disturbance.
+                  </p>
+                  <p style="margin-top:10px;">
+                        <strong>What to expect:</strong> We walk the area first, identify obstacles (stumps, rocks,
+                        wire, utilities),
+                        then mulch to the coverage level you want (light, medium, or heavy).
+                  </p>
+            </div>
+      </section>
+      <!-- LOT CLEARING -->
+      <section class="section alt" id="lot-clearing">
+            <div class="container">
+                  <h2>Lot Clearing</h2>
+                  <p>
+                        Lot clearing is focused on preparing a property for building, expansion, or major use. We clear
+                        brush and trees as needed,
+                        open up the work area, and help set you up for the next step (grading, foundations, driveway
+                        access, etc.).
+                  </p>
+                  <p style="margin-top:10px;">
+                        <strong>Common projects:</strong> house pads, mobile home sites, shop pads, yard expansions,
+                        utility runs, and build access.
+                  </p>
+                  <p style="margin-top:10px;">
+                        <strong>Options:</strong> selective clearing (keep certain trees), full clearing, debris
+                        haul-off, and stump grinding.
+                  </p>
+            </div>
+      </section>
+      <!-- BRUSH CLEARING -->
+      <section class="section" id="brush-clearing">
+            <div class="container">
+                  <h2>Brush Clearing</h2>
+                  <p>
+                        Brush clearing is perfect when you need thick growth removed but don’t necessarily need a full
+                        lot cleared.
+                        This includes briars, vines, small trees, and dense undergrowth that makes a property unusable.
+                  </p>
+                  <p style="margin-top:10px;">
+                        <strong>Great for:</strong> fence lines, property borders, trails, ditches, rights-of-way, and
+                        cleanup after storms.
+                  </p>
+                  <p style="margin-top:10px;">
+                        <strong>Finish levels:</strong> We can clear for access only or clear for a cleaner “yard-ready”
+                        look depending on your plan.
+                  </p>
+            </div>
+      </section>
+      <!-- DRIVEWAY / CULVERT -->
+      <section class="section alt" id="driveway-culvert">
+            <div class="container">
+                  <h2>Driveway / Culvert</h2>
+                  <p>
+                        A good driveway starts with proper access and drainage. If water is washing out your entrance,
+                        pooling, or cutting ruts,
+                        you may need improvements like culvert work, widening, or reshaping the approach so it holds up
+                        over time.
+                  </p>
+                  <p style="margin-top:10px;">
+                        <strong>We can help with:</strong> driveway entrance clearing, widening for trailers/equipment,
+                        culvert replacement,
+                        cleaning around pipes/ditches, and improving access before a build or land project.
+                  </p>
+                  <p style="margin-top:10px;">
+                        <strong>Heads up:</strong> Culvert sizing and drainage needs depend on your site — we’ll
+                        recommend the safest approach after a walkthrough.
+                  </p>
+            </div>
+      </section>
+      <!-- SCHEDULE -->
+      <section class="section" id="schedule">
+            <div class="container">
+                  <h2>Schedule a Free On-Site Walkthrough</h2>
+                  <p>
+                        The best way to price land clearing accurately is to see the acreage, access, and finish you
+                        want.
+                        Call or text and we’ll set a time to walk the property and give you a clear plan.
+                  </p>
+                  <div style="margin-top:14px; display:flex; gap:12px; flex-wrap:wrap;">
+                        <a class="btn btn-primary" href="tel:+14783028815">Call Now</a>
+                        <a class="btn btn-outline" href="sms:+14783028815">Text Us</a>
+                  </div>
+            </div>
+      </section>
+      <!-- FOOTER -->
+      <footer class="footer">
+            <div class="container">
+                  <div class="footer-grid">
+                        <!-- Quick Links -->
+                        <div>
+                              <h3>Quick Links</h3>
+                              <ul class="footer-list">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="tree-services.html">Tree Services</a></li>
+                                    <li><a href="land-clearing.html">Land Clearing</a></li>
+                                    <li><a href="hardscaping.html">Hard Scaping</a></li>
+                              </ul>
+                        </div>
+                        <!-- Contact -->
+                        <div>
+                              <h3>Contact Us</h3>
+                              <ul class="footer-list">
+                                    <li><a href="tel:+14783028815">(478) 302-8815</a></li>
+                                    <li><a href="mailto:youremail@domain.com">youremail@domain.com</a></li>
+                              </ul>
+                        </div>
+                        <!-- Follow -->
+                        <div>
+                              <h3>Follow Us</h3>
+                              <ul class="social-list">
+                                    <li>
+                                          <a aria-label="Facebook" class="social-link" href="#">
+                                                <svg aria-hidden="true" class="social-icon" viewbox="0 0 24 24">
+                                                      <path d="M22 12a10 10 0 1 0-11.56 9.88v-7H7.9V12h2.54V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.88h-2.34v7A10 10 0 0 0 22 12z"
+                                                            fill="currentColor"></path>
+                                                </svg>
+                                                <span>@nextcutlandsolutions</span>
+                                          </a>
+                                    </li>
+                                    <li>
+                                          <a aria-label="Instagram" class="social-link" href="#">
+                                                <svg aria-hidden="true" class="social-icon" viewbox="0 0 24 24">
+                                                      <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.75 6a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 17.75 6z"
+                                                            fill="currentColor"></path>
+                                                </svg>
+                                                <span>@nextcutlandsolutions</span>
+                                          </a>
+                                    </li>
+                                    <li>
+                                          <a aria-label="TikTok" class="social-link" href="#">
+                                                <svg aria-hidden="true" class="social-icon" viewbox="0 0 24 24">
+                                                      <path d="M16.5 2h-2.2v13.2a2.7 2.7 0 1 1-2.7-2.7c.3 0 .6 0 .9.1V10c-.3 0-.6-.1-.9-.1A5.2 5.2 0 1 0 15 15.1V8.2c1.1 1.1 2.6 1.8 4.2 1.8V7.7c-1.6 0-2.9-1-3.4-2.5-.2-.5-.3-1.1-.3-1.7z"
+                                                            fill="currentColor"></path>
+                                                </svg>
+                                                <span>@nextcutlandsolutions</span>
+                                          </a>
+                                    </li>
+                              </ul>
+                        </div>
+                  </div>
+                  <div class="footer-meta">
+                        <p class="footer-small">© <span id="year"></span> NextCut Land Solutions</p>
+                  </div>
+            </div>
+      </footer>
+      <script src="script.js"></script>
+</body>
+
+</html>
