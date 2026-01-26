@@ -34,32 +34,27 @@ a {
 
 /* Buttons */
 .btn {
-  display: inline-flex;
+  
   align-items: center;
   justify-content: center;
   padding: 10px 14px;
   border-radius: 999px;
   border: 1px solid transparent;
-  font-weight: 900;
   cursor: pointer;
   transition: transform .12s ease, filter .12s ease, border-color .12s ease;
   white-space: nowrap;
 }
 
-button {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-}
+
 
 .btn:active {
   transform: translateY(1px);
 }
 
 .btn-primary {
-  background: var(--red);
-  color: var(--white);
-  border-color: var(--red);
+  background-color: pink;
+  color: #c8012e;
+  border-color: black
 }
 
 .btn-primary:hover {
@@ -81,203 +76,24 @@ button {
 }
 
 /* Topbar */
-.topbar {
-  background: var(--black);
-  color: var(--white);
-}
 
-.topbar-inner {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 14px;
-  padding: 10px 0;
-}
 
-.company-name {
-  font-weight: 950;
-  letter-spacing: .3px;
-}
 
-.topbar-actions {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
 
-.phone-link {
-  font-weight: 900;
-  opacity: .96;
-}
 
-.phone-link:hover {
-  color: var(--silver);
-}
 
 /* Navbar */
-.navbar {
-  top: 0;
-  z-index: 100;
-  background: var(--white);
-  border-bottom: 1px solid rgba(34, 34, 34, .10);
-}
 
-.nav-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  padding: 12px 0;
-}
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 950;
-}
+
 
 /* LOGO IMAGE */
-.logo-img {
-  height: 180px;
-  /* Adjust if needed */
-  width: auto;
-  object-fit: fill;
-  display: block;
-  position: absolute;
-}
 
-.logo-mark {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  display: grid;
-  place-items: center;
-  background: var(--red);
-  color: var(--white);
-  box-shadow: 0 12px 20px rgba(200, 16, 46, .25);
-}
 
-.logo-text {
-  letter-spacing: .2px;
-}
 
-.red-strip {
-  height: 10px;
-  background: var(--red);
-}
 
-/* Navlinks */
-.navlinks {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
 
-.navlink {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 12px;
-  border-radius: 999px;
-  font-weight: 900;
-  color: var(--black);
-  background: transparent;
-  border: none;
-}
 
-.navlink:hover {
-  background: rgba(200, 16, 46, .08);
-  color: var(--red);
-}
-
-.caret {
-  font-size: .9em;
-  opacity: .85;
-}
-
-.nav-cta {
-  display: none;
-}
-
-/* shown in mobile menu */
-
-/* Dropdown (THE FIX) */
-.dropdown {
-  position: relative;
-}
-
-.dropbtn {
-  cursor: pointer;
-}
-
-/* Menu is anchored directly under button (no gap) */
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 260px;
-  padding: 10px;
-  background: var(--white);
-  border: 1px solid rgba(34, 34, 34, .12);
-  border-radius: 16px;
-  box-shadow: var(--shadow);
-  display: none;
-}
-
-/* Menu links */
-.dropdown-menu a {
-  display: block;
-  padding: 10px 12px;
-  border-radius: 12px;
-  font-weight: 800;
-}
-
-.dropdown-menu a:hover {
-  background: rgba(192, 192, 192, .25);
-  color: var(--red);
-}
-
-/* Desktop open behavior: hover OR focus-within */
-@media (hover:hover) {
-
-  .dropdown:hover .dropdown-menu,
-  .dropdown:focus-within .dropdown-menu {
-    display: block;
-  }
-}
-
-/* JS open class for mobile + click toggles */
-.dropdown.open .dropdown-menu {
-  display: block;
-}
-
-.dropdown.open>.dropbtn {
-  background: rgba(200, 16, 46, .08);
-  color: var(--red);
-}
-
-/* Hamburger */
-.hamburger {
-  display: none;
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  border: 1px solid rgba(34, 34, 34, .14);
-  background: var(--white);
-  cursor: pointer;
-}
-
-.hamburger span {
-  display: block;
-  width: 18px;
-  height: 2px;
-  background: var(--black);
-  margin: 5px auto;
-}
 
 /* Hero */
 .hero {
@@ -439,6 +255,26 @@ textarea:focus {
   padding: 18px 0;
 }
 
+/* Hide Instagram and TikTok footer items and the footer email link site-wide */
+.social-link[aria-label="Instagram"],
+.social-link[aria-label="TikTok"] {
+  display: none !important;
+}
+
+/* Hide any footer contact list item that contains a mailto link. Uses :has when available, with a fallback that hides mailto anchors. */
+.footer .footer-list li:has(a[href^="mailto:"]) {
+  display: none !important;
+}
+.footer .footer-list a[href^="mailto:"] {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+}
+
 .footer-inner {
   display: flex;
   justify-content: space-between;
@@ -468,37 +304,66 @@ textarea:focus {
   }
 }
 
-/* Mobile menu */
-@media (max-width: 780px) {
+/* Mobile menu (activate mobile layout at <=820px) */
+@media (max-width: 820px) {
+  /* Center topbar contents on phones/tablets */
   .topbar-inner {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    /* center items vertically so company name lines up with the button */
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+    /* original top/bottom padding: 10px; increase bottom by 30px (10 + 30 = 40) */
+    padding: 10px 0 40px;
+  }
+
+  .topbar-brand {
+    flex: 0 1 auto;
+    min-width: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .company-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
   }
 
   .topbar-actions {
-    width: 100%;
-    justify-content: space-between;
+    flex: 0 0 auto;
+    width: auto;
+    justify-content: center;
   }
 
+  /* Keep full nav inline and centered at <=820px; hide hamburger */
   .hamburger {
-    display: block;
+    display: none;
+  }
+
+  .nav-inner {
+    justify-content: center;
+    gap: 12px;
   }
 
   .navlinks {
-    position: absolute;
-    top: calc(100% - 1px);
-    left: 16px;
-    right: 16px;
-    background: var(--white);
-    border: 1px solid rgba(34, 34, 34, .12);
-    border-radius: 16px;
-    box-shadow: var(--shadow);
-    padding: 10px;
-    display: none;
-    flex-direction: column;
-    align-items: stretch;
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 6px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .navlinks.open {
@@ -506,27 +371,59 @@ textarea:focus {
   }
 
   .nav-cta {
-    display: block;
-    padding-top: 6px;
-  }
-
-  /* Dropdown menus become inline blocks in mobile */
-  .dropdown-menu {
-    position: static;
-    box-shadow: none;
-    border: none;
-    padding: 6px 0 0 0;
-    min-width: 0;
+    /* hide the schedule CTA in the nav at <=820px */
     display: none;
-    /* controlled via .open */
+    padding-top: 0;
   }
 
-  .dropdown.open .dropdown-menu {
+  /* Restore dropdown behavior similar to desktop so submenus appear under buttons */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 260px;
+    padding: 10px;
+    background: var(--white);
+    border: 1px solid rgba(34, 34, 34, .12);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    display: none;
+  }
+
+  .dropdown.open .dropdown-menu,
+  .dropdown:focus-within .dropdown-menu {
     display: block;
   }
 
   .dropdown-menu a {
-    background: rgba(34, 34, 34, .03);
+    background: transparent;
+  }
+
+  /* Show a centered logo between topbar and nav on small screens */
+  .mobile-logo {
+    display: flex;
+    justify-content: center;
+    /* remove bottom padding and pull container up so its bottom is raised */
+    padding: 8px 0 0;
+    margin-bottom: -70px; /* raises the bottom border by 70px total */
+    position: relative;
+    overflow: visible; /* allow the larger logo to overflow its container */
+  }
+
+  /* Hide the logo inside the nav on small screens (we show the mobile-logo instead) */
+  .nav-inner .logo {
+    display: none;
+  }
+
+  /* Make the mobile logo larger, centered, and slightly overlapping adjacent bars */
+  .mobile-logo .logo-img {
+    position: relative;
+    height: 210px; /* slightly larger */
+    width: auto;
+    transform: translateY(-42px); /* increase upward overlap proportionally */
+    z-index: 101; /* sit above the nav (nav uses z-index:100) */
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -621,4 +518,342 @@ textarea:focus {
   .footer-meta {
     justify-content: flex-start;
   }
+}
+
+/* =========================
+   Mobile NAV (<=680px)
+   - Red navbar background
+   - Replace links with hamburger toggle
+   - Slide-down panel + animated hamburger
+   ========================= */
+
+.mobile-toggle{
+  display: none; /* shown only on small screens */
+  align-items: center;
+  gap: 10px;
+  background: rgba(34,34,34,.92);
+  color: var(--white);
+  border: 1px solid rgba(248,248,255,.18);
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 950;
+  cursor: pointer;
+}
+
+.mobile-toggle:active{
+  transform: translateY(1px);
+}
+
+.hamburger{
+  width: 22px;
+  height: 16px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span{
+  display: block;
+  height: 2px;
+  background: var(--white);
+  border-radius: 999px;
+  transition: transform .18s ease, opacity .18s ease;
+}
+
+/* Animated hamburger -> X when open */
+.mobile-toggle.is-open .hamburger span:nth-child(1){
+  transform: translateY(7px) rotate(45deg);
+}
+.mobile-toggle.is-open .hamburger span:nth-child(2){
+  opacity: 0;
+}
+.mobile-toggle.is-open .hamburger span:nth-child(3){
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+
+
+  /* Dropdown menus flow inside panel on mobile */
+  .dropdown-menu{
+    position: static;
+    min-width: 0;
+    box-shadow: none;
+    border: none;
+    padding: 6px 0 0;
+  }
+
+  .dropdown-menu a{
+    border-radius: 12px;
+    padding: 10px 12px;
+  }
+
+  /* Show Schedule Now inside the panel on mobile */
+  .nav-cta{
+    display: block;
+    padding-top: 6px;
+  }
+
+  /* Keep legacy mobile menu elements hidden */
+  .mobile-menu-bar,
+  .mobile-menu-panel{
+    display: none !important;
+  }
+
+
+.topbar {
+    background-color: #222222;
+    text-align: right;
+    padding: 20px 80px 20px 20px;
+    font-size: 30px;
+    color: white;
+}
+
+.call-now-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #c8012e;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: transform 0.15s ease;
+}
+
+.call-now-button:hover {
+    transform: scale(1.1);
+}
+
+.fa-brands,
+.fa-square-facebook {
+    color: #1877F2;
+}
+
+.follow-us-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #c8012e;
+    padding: 10px;
+    transition: transform 0.15s ease;
+    background-color: pink;
+    border-radius: 10px;
+}
+
+.follow-us-button:hover {
+    transform: scale(1.1);
+}
+
+#navigation-bar {
+    border-top: 2px solid #c8012e;
+    border-bottom: 2px solid #c8012e;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 220px;
+    width: 220px;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.navbar {
+    overflow: hidden;
+    margin-left: auto;
+    padding-right: 80px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #c8012e;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1033px) {
+    .topbar {
+        text-align: center;
+        padding: 20px;
+    }
+
+    #topbar-company-name {
+        display: none;
+    }
+
+    .follow-us-button {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .call-now-button {
+        padding-bottom: 10px;
+    }
+
+    #navigation-bar {
+        flex-direction: column;
+        height: 225px;
+        position: relative;
+    }
+
+
+
+    .logo-img {
+        margin: 0px;
+        position: relative;
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
+
+    .navbar {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+    }
+}
+
+/* --- Mobile hamburger menu (added) --- */
+.hamburger {
+    display: none;
+    /* shown at <=600px */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 10px 16px;
+}
+
+.mobile-menu {
+    display: none;
+    /* toggled with .open at <=600px */
+}
+
+@media (max-width: 825px) {
+
+    /* Hide the desktop nav links */
+    .navbar {
+        display: none;
+    }
+
+    /* Show the hamburger */
+    .hamburger {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color:#c8012e;
+        margin-top: 5px;
+    }
+
+    /* Make room and allow the dropdown to position under the nav bar */
+    #navigation-bar {
+        position: relative;
+        padding-right: 0;
+    }
+
+    /* Dropdown panel */
+    .mobile-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        border-top: 2px solid #c8012e;
+        border-bottom: 2px solid #c8012e;
+        z-index: 1000;
+    }
+
+    .mobile-menu.open {
+        display: block;
+    }
+
+    .mobile-menu a,
+    .mobile-menu summary {
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        cursor: pointer;
+        border-top: 3px solid #eee;
+    }
+
+    .mobile-menu a:hover,
+    .mobile-menu summary:hover {
+        background-color: #ddd;
+    }
+
+    
+
+    .mobile-submenu a {
+        padding-left: 32px;
+    }
 }

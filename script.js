@@ -1,11 +1,37 @@
-// Mobile nav toggle
-const hamburger = document.getElementById("hamburger");
+// Mobile nav toggle removed (hamburger/menu not used)
 const navlinks = document.getElementById("navlinks");
+const mobileToggle = document.getElementById("mobileToggle");
 
-hamburger.addEventListener("click", () => {
-  const isOpen = navlinks.classList.toggle("open");
-  hamburger.setAttribute("aria-expanded", String(isOpen));
-});
+function setMobileMenu(open) {
+  if (!navlinks || !mobileToggle) return;
+  navlinks.classList.toggle("open", open);
+  mobileToggle.classList.toggle("is-open", open);
+  mobileToggle.setAttribute("aria-expanded", String(open));
+}
+
+if (mobileToggle && navlinks) {
+  mobileToggle.addEventListener("click", () => {
+    const isOpen = navlinks.classList.contains("open");
+    setMobileMenu(!isOpen);
+  });
+
+  // Close menu when a normal link is clicked (mobile UX)
+  navlinks.addEventListener("click", (e) => {
+    const a = e.target.closest("a");
+    if (!a) return;
+    if (window.matchMedia("(max-width: 680px)").matches) {
+      setMobileMenu(false);
+    }
+  });
+
+  // If user resizes up, ensure menu closes
+  window.addEventListener("resize", () => {
+    if (!window.matchMedia("(max-width: 680px)").matches) {
+      setMobileMenu(false);
+    }
+  });
+}
+
 
 // Dropdown toggles (mobile + click)
 const dropdowns = document.querySelectorAll("[data-dropdown]");
@@ -44,9 +70,13 @@ document.addEventListener("click", (e) => {
 
 // Close dropdowns when pressing Escape
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closeAllDropdowns();
+  if (e.key === "Escape") {
+    closeAllDropdowns();
+    setMobileMenu(false);
+  }
 });
-
 // Footer year (if you want it, but the HTML already has it)
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+// Mobile menu panel logic removed (no mobile menu present)

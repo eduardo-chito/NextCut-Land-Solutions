@@ -7,77 +7,94 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>NextCut Land Solutions</title>
   <link href="styles.css" rel="stylesheet" />
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/72978efe03.js"></script>
 </head>
 
 <body>
-  <!-- TOP BAR -->
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <div class="topbar-brand">
-        <span class="company-name">NextCut Land Solutions</span>
-      </div>
-      <div class="topbar-actions">
-        <!--<a class="phone-link" href="tel:+14783028815">(478) 302-8815</a>-->
-        <a class="btn btn-primary" href="tel:+14783028815">Call Now</a>
-      </div>
+  <header>
+    <div class="topbar">
+      <span class="company-name" id="topbar-company-name">NextCut Land Solutions</span>
+      <a class="call-now-button" href="tel:+14783028815"><i class="fa-solid fa-square-phone"></i> (478)
+        302-8815</a>
+      <a class="follow-us-button"
+        href="https://www.facebook.com/profile.php?id=61576941093577&amp;mibextid=wwXIfr&amp;rdid=H2EJJz2gerYbssPw&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17nY7MvEBQ%2F%3Fmibextid%3DwwXIfr#"><i
+          class="fa-brands fa-square-facebook"></i> Follow us</a>
     </div>
+    <nav id="navigation-bar">
+      <div id="logo-img-container">
+        <img alt="NextCut Land Solutions Logo" class="logo-img" src="Logo/See Through Logo.png" />
+      </div><button aria-controls="mobileMenu" aria-expanded="false" aria-label="Open menu" class="hamburger"
+        id="hamburgerBtn" type="button"><i class="fa-solid fa-bars"></i></button>
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <div class="dropdown">
+          <button class="dropbtn">Tree Services
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="tree-services.html#tree-removal">Tree Removal</a>
+            <a href="tree-services.html#tree-trimming">Tree Trimming</a>
+            <a href="tree-services.html#stump-grinding">Stump Grinding</a>
+            <a href="tree-services.html#cleanup">Cleanup / Hauld-Off</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Land Clearing
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="land-clearing.html#forestry-mulching">Forestry Mulching</a>
+            <a href="land-clearing.html#lot-clearing">Lot Clearing</a>
+            <a href="land-clearing.html#brush-clearing">Brush Clearing</a>
+            <a href="land-clearing.html#driveway-culvert">Driveway / Culvert</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Hard Scaping
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="hardscaping.html#pavers">Paver Patios &amp; Walkways</a>
+            <a href="hardscaping.html#gravel-pads">Gravel Pads</a>
+            <a href="hardscaping.html#edging">Edging &amp; Borders</a>
+            <a href="hardscaping.html#retaining">Retaining-Style Borders (Light Wall Work)</a>
+            <a href="hardscaping.html#drainage">Drainage Improvements</a>
+          </div>
+        </div>
+        <a href="waste-management.html">Junk Removal</a>
+      </div>
+      <div class="mobile-menu" id="mobileMenu"><a href="index.html">Home</a><a href="about.html">About Us</a>
+        <details>
+          <summary>Tree Services <i class="fa fa-caret-down"></i></summary>
+          <div class="mobile-submenu"><a href="tree-services.html#tree-removal">Tree Removal</a><a
+              href="tree-services.html#tree-trimming">Tree Trimming</a><a href="tree-services.html#stump-grinding">Stump
+              Grinding</a><a href="tree-services.html#cleanup">Cleanup / Hauld-Off</a></div>
+        </details>
+        <details>
+          <summary>Land Clearing <i class="fa fa-caret-down"></i></summary>
+          <div class="mobile-submenu"><a href="land-clearing.html#forestry-mulching">Forestry Mulching</a><a
+              href="land-clearing.html#lot-clearing">Lot Clearing</a><a href="land-clearing.html#brush-clearing">Brush
+              Clearing</a><a href="land-clearing.html#driveway-culvert">Driveway / Culvert</a></div>
+        </details>
+        <details>
+          <summary>Hard Scaping <i class="fa fa-caret-down"></i></summary>
+          <div class="mobile-submenu"><a href="hardscaping.html#pavers">Paver Patios &amp; Walkways</a><a
+              href="hardscaping.html#gravel-pads">Gravel Pads</a><a href="hardscaping.html#edging">Edging &amp;
+              Borders</a><a href="hardscaping.html#retaining">Retaining-Style Borders (Light Wall Work)</a><a
+              href="hardscaping.html#drainage">Drainage Improvements</a></div>
+        </details><a href="waste-management.html">Junk Removal</a>
+      </div>
+    </nav>
   </header>
-  <!-- NAV -->
-  <nav aria-label="Primary navigation" class="navbar">
-    <div class="container nav-inner">
-      <!-- Logo -->
-      <a aria-label="NextCut Land Solutions" class="logo" href="#home">
-        <img alt="NextCut Land Solutions logo" class="logo-img" src="Logo\See Through Logo.png" />
-      </a>
-      <!-- Mobile button -->
-      <button aria-expanded="false" aria-label="Open menu" class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
-      </button>
-      <!-- Links -->
-      <ul class="navlinks" id="navlinks">
-        <li><a class="navlink" href="#home">Home</a></li>
-        <li><a class="navlink" href="about.html">About Us</a></li>
-        <!-- Dropdown: Tree Services -->
-        <li class="dropdown" data-dropdown="">
-          <button aria-expanded="false" aria-haspopup="true" class="navlink dropbtn" type="button">
-            Tree Services <span class="caret">▾</span>
-          </button>
-          <div aria-label="Tree Services Menu" class="dropdown-menu" role="menu">
-            <a href="tree-services.html" role="menuitem">Tree Removal</a>
-            <a href="tree-services.html" role="menuitem">Tree Trimming</a>
-            <a href="tree-services.html" role="menuitem">Stump Grinding</a>
-            <a href="tree-services.html" role="menuitem">Cleanup / Haul-Off</a>
-          </div>
-        </li>
-        <!-- Dropdown: Land Clearing -->
-        <li class="dropdown" data-dropdown="">
-          <button aria-expanded="false" aria-haspopup="true" class="navlink dropbtn" type="button">
-            Land Clearing <span class="caret">▾</span>
-          </button>
-          <div aria-label="Land Clearing Menu" class="dropdown-menu" role="menu">
-            <a href="land-clearing.html" role="menuitem">Forestry Mulching</a>
-            <a href="land-clearing.html" role="menuitem">Lot Clearing</a>
-            <a href="land-clearing.html" role="menuitem">Brush Clearing</a>
-            <a href="land-clearing.html" role="menuitem">Driveway/Culvert</a>
-          </div>
-        </li>
-        <li><a class="navlink" href="hardscaping.html">Hard Scaping</a></li>
-        <li class="nav-cta">
-          <a class="btn btn-primary" href="#schedule">Schedule Now</a>
-        </li>
-      </ul>
-    </div>
-    <!-- Red strip under nav -->
-    <div aria-hidden="true" class="red-strip"></div>
-  </nav>
-  <!-- HERO -->
+
   <main class="hero" id="home">
     <div class="container hero-inner">
       <div class="hero-content">
-        <p class="badge">Locally Owned • Fast Response • Free On-Site Walkthrough</p>
+        <p class="badge">Locally Owned • Licensed & Insured • Free On-Site Walkthrough</p>
         <h1>NextCut Land Solutions</h1>
         <h2>
-          Land Clearing • Tree Services • Forestry Mulching • Stump Grinding • Cleanup / Haul-Off • Dumpster Rental
+          Tree Services • Land Clearing • Hard Scaping • Junk Removal
         </h2>
         <p class="hero-text">
           We help homeowners, landowners, and contractors clear property quickly and safely.
@@ -85,7 +102,9 @@
           NextCut delivers clean results and professional service.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary btn-lg" href="#schedule">Schedule A Walkthrough</a>
+          <a class="btn btn-primary btn-lg"
+            href="https://www.facebook.com/profile.php?id=61576941093577&amp;mibextid=wwXIfr&amp;rdid=H2EJJz2gerYbssPw&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17nY7MvEBQ%2F%3Fmibextid%3DwwXIfr#"><i
+              class="fa-brands fa-square-facebook"></i> Follow us</a>
           <a class="btn btn-outline btn-lg" href="tel:+14783028815">Call (478) 302-8815</a>
         </div>
         <div class="quick-info">
@@ -115,21 +134,28 @@
             Service
             <select name="option" required="">
               <option value="">Select a service</option>
-              <option>Tree Removal</option>
-              <option>Tree Trimming</option>
-              <option>Stump Grinding</option>
-              <option>Cleanup / Haul-Off</option>
-              <option>Forestry Mulching</option>
-              <option>Lot Clearing</option>
               <option>Brush Clearing</option>
+              <option>Cleanup / Haul-Off</option>
+              <option>Drainage Improvements</option>
               <option>Driveway/Culvert</option>
               <option>Dumpster Rental</option>
+              <option>Edging & Borders</option>
+              <option>Forestry Mulching</option>
+              <option>Gravel Pads</option>
+              <option>Junk Removal</option>
+              <option>Lot Clearing</option>
+              <option>Paver Patios & Walkways</option>
+              <option>Retaining-Style Borders (Light Wall Work)</option>
+              <option>Stump Grinding</option>
+              <option>Tree Removal</option>
+              <option>Tree Trimming</option>
               <option>Other</option>
             </select>
           </label>
           <label>
             Notes
-            <textarea name="notes" placeholder="Describe the job (acreage, access, deadlines, etc.)" rows="4"></textarea>
+            <textarea name="notes" placeholder="Describe the job (acreage, access, deadlines, etc.)"
+              rows="4"></textarea>
           </label>
           <button class="btn btn-primary" type="submit">Request Quote</button>
           <p class="small">
@@ -152,6 +178,7 @@
             <li><a href="tree-services.html">Tree Services</a></li>
             <li><a href="land-clearing.html">Land Clearing</a></li>
             <li><a href="hardscaping.html">Hard Scaping</a></li>
+            <li><a href="waste-management.html">Junk Removal</a></li>
           </ul>
         </div>
         <!-- Contact -->
@@ -167,13 +194,14 @@
           <h3>Follow Us</h3>
           <ul class="social-list">
             <li>
-              <a aria-label="Facebook" class="social-link" href="#">
+              <a aria-label="Facebook" class="social-link"
+                href="https://www.facebook.com/profile.php?id=61576941093577&amp;mibextid=wwXIfr&amp;rdid=H2EJJz2gerYbssPw&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17nY7MvEBQ%2F%3Fmibextid%3DwwXIfr#">
                 <svg aria-hidden="true" class="social-icon" viewbox="0 0 24 24">
                   <path
                     d="M22 12a10 10 0 1 0-11.56 9.88v-7H7.9V12h2.54V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.88h-2.34v7A10 10 0 0 0 22 12z"
                     fill="currentColor"></path>
                 </svg>
-                <span>@nextcutlandsolutions</span>
+                <span>NextCut Land Solutions</span>
               </a>
             </li>
             <li>
@@ -205,6 +233,29 @@
     </div>
   </footer>
   <script src="script.js"></script>
+  <script>const hamburgerBtn = document.getElementById("hamburgerBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    hamburgerBtn.addEventListener("click", () => {
+      const isOpen = mobileMenu.classList.toggle("open");
+      hamburgerBtn.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    // Close menu when clicking a link (optional but nice)
+    mobileMenu.addEventListener("click", (e) => {
+      if (e.target.tagName === "A") {
+        mobileMenu.classList.remove("open");
+        hamburgerBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    // If you resize wider than 600px, ensure the menu closes
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 600) {
+        mobileMenu.classList.remove("open");
+        hamburgerBtn.setAttribute("aria-expanded", "false");
+      }
+    });</script>
 </body>
 
 </html>

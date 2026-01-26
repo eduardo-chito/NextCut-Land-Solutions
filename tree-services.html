@@ -3,308 +3,362 @@
 <html lang="en">
 
 <head>
-      <meta charset="utf-8" />
-      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-      <title>Tree Services | NextCut Land Solutions</title>
-      <link href="styles.css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>NextCut Land Solutions</title>
+  <link href="styles.css" rel="stylesheet" />
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/72978efe03.js"></script>
 </head>
 
 <body>
-      <!-- TOP BAR -->
-      <header class="topbar">
-            <div class="container topbar-inner">
-                  <div class="topbar-brand">
-                        <span class="company-name">NextCut Land Solutions</span>
-                  </div>
-                  <div class="topbar-actions">
-                        <a class="btn btn-primary" href="tel:+14783028815">Call Now</a>
-                  </div>
-            </div>
-      </header>
-      <!-- NAV -->
-      <nav aria-label="Primary navigation" class="navbar">
-            <div class="container nav-inner">
-                  <!-- Logo -->
-                  <a aria-label="NextCut Land Solutions" class="logo" href="index.html">
-                        <img alt="NextCut Land Solutions logo" class="logo-img" src="Logo\See Through Logo.png" />
-                  </a>
-                  <!-- Mobile button -->
-                  <button aria-expanded="false" aria-label="Open menu" class="hamburger" id="hamburger">
-                        <span></span><span></span><span></span>
-                  </button>
-                  <!-- Links -->
-                  <ul class="navlinks" id="navlinks">
-                        <li><a class="navlink" href="index.html">Home</a></li>
-                        <li><a class="navlink" href="about.html">About Us</a></li>
-                        <!-- Dropdown: Tree Services -->
-                        <li class="dropdown" data-dropdown="">
-                              <button aria-expanded="false" aria-haspopup="true" class="navlink dropbtn" type="button">
-                                    Tree Services <span class="caret">▾</span>
-                              </button>
-                              <!-- On this page, these should jump to sections below -->
-                              <div aria-label="Tree Services Menu" class="dropdown-menu" role="menu">
-                                    <a href="#tree-removal" role="menuitem">Tree Removal</a>
-                                    <a href="#tree-trimming" role="menuitem">Tree Trimming</a>
-                                    <a href="#stump-grinding" role="menuitem">Stump Grinding</a>
-                                    <a href="#cleanup" role="menuitem">Cleanup / Haul-Off</a>
-                              </div>
-                        </li>
-                        <!-- Dropdown: Land Clearing (kept pointing to homepage sections) -->
-                        <li class="dropdown" data-dropdown="">
-                              <button aria-expanded="false" aria-haspopup="true" class="navlink dropbtn" type="button">
-                                    Land Clearing <span class="caret">▾</span>
-                              </button>
-                              <div aria-label="Land Clearing Menu" class="dropdown-menu" role="menu">
-                                    <a href="index.html#forestry-mulching" role="menuitem">Forestry Mulching</a>
-                                    <a href="index.html#lot-clearing" role="menuitem">Lot Clearing</a>
-                                    <a href="index.html#brush-clearing" role="menuitem">Brush Clearing</a>
-                                    <a href="index.html#driveway-culvert" role="menuitem">Driveway/Culvert</a>
-                              </div>
-                        </li>
-                        <li><a class="navlink" href="index.html#dumpster">Hard Scaping</a></li>
-                        <li class="nav-cta">
-                              <a class="btn btn-primary" href="#schedule">Schedule Now</a>
-                        </li>
-                  </ul>
-            </div>
-            <!-- Red strip under nav -->
-            <div aria-hidden="true" class="red-strip"></div>
-      </nav>
-      <!-- HERO -->
-      <main aria-label="Tree Services" class="hero">
-            <div class="container hero-inner">
-                  <div class="hero-content">
-                        <p class="badge">Licensed-Style Professional Service • Fast Response • Free On-Site Walkthrough
-                        </p>
-                        <h1>Tree Services</h1>
-                        <h2>
-                              Tree Removal • Tree Trimming • Stump Grinding • Cleanup / Haul-Off
-                        </h2>
-                        <p class="hero-text">
-                              NextCut Land Solutions provides safe, efficient tree work for homeowners, landowners, and
-                              contractors.
-                              Whether you need one tree removed, limbs cleared away from a structure, or stumps ground
-                              after a cut-down,
-                              we show up ready, protect your property, and leave the jobsite clean.
-                        </p>
-                        <div class="hero-actions">
-                              <a class="btn btn-primary btn-lg" href="#schedule">Schedule A Walkthrough</a>
-                              <a class="btn btn-outline btn-lg" href="tel:+14783028815">Call (478) 302-8815</a>
-                        </div>
-                        <div class="quick-info">
-                              <div class="info-card">
-                                    <strong>Best For</strong>
-                                    <span>Storm cleanup, hazard trees, overgrown limbs, lot prep, and property
-                                          maintenance</span>
-                              </div>
-                              <div class="info-card">
-                                    <strong>Service Area</strong>
-                                    <span>Middle Georgia &amp; Surrounding Areas</span>
-                              </div>
-                        </div>
-                  </div>
-                  <!-- Right card (same style as home page) -->
-                  <aside aria-label="Request a walkthrough" class="quote-card">
-                        <h3>Get a Fast Response</h3>
-                        <p>Tell us what you need — we’ll reach out ASAP.</p>
-                        <form class="form"
-                              onsubmit="event.preventDefault(); alert('Connect this to your email/CRM/booking tool.');">
-                              <label>
-                                    Name
-                                    <input placeholder="Your name" required="" type="text" />
-                              </label>
-                              <label>
-                                    Phone
-                                    <input placeholder="(###) ###-####" required="" type="tel" />
-                              </label>
-                              <label>
-                                    Service
-                                    <select required="">
-                                          <option value="">Select a service</option>
-                                          <option>Tree Removal</option>
-                                          <option>Tree Trimming</option>
-                                          <option>Stump Grinding</option>
-                                          <option>Cleanup / Haul-Off</option>
-                                    </select>
-                              </label>
-                              <label>
-                                    Notes
-                                    <textarea
-                                          placeholder="How many trees? Any hazards, fences, power lines, tight access?"
-                                          rows="4"></textarea>
-                              </label>
-                              <button class="btn btn-primary" type="submit">Request Walkthrough</button>
-                              <p class="small">
-                                    Prefer calling? <a href="tel:+14783028815">(478) 302-8815</a>
-                              </p>
-                        </form>
-                  </aside>
-            </div>
-      </main>
-      <!-- TREE REMOVAL -->
-      <section class="section" id="tree-removal">
-            <div class="container">
-                  <h2>Tree Removal</h2>
-                  <p>
-                        If a tree is dead, leaning, storm-damaged, or too close to a home, fence, or driveway, removal
-                        may be the safest
-                        option. We evaluate the tree’s condition, fall direction, and surrounding risk (structures,
-                        power lines, tight access),
-                        then remove it with a plan that prioritizes safety and property protection.
-                  </p>
-                  <p style="margin-top:10px;">
-                        <strong>Common reasons for removal:</strong> dead/dying trees, split trunks, root damage, storm
-                        hazards,
-                        trees rubbing on roofs, and trees blocking new builds or lot prep.
-                  </p>
-                  <p style="margin-top:10px;">
-                        <strong>What’s included (typical):</strong> on-site evaluation, controlled removal,
-                        cutting/stacking,
-                        and optional haul-off. Stump grinding is available after removal.
-                  </p>
-            </div>
-      </section>
-      <!-- TREE TRIMMING -->
-      <section class="section alt" id="tree-trimming">
-            <div class="container">
-                  <h2>Tree Trimming</h2>
-                  <p>
-                        Trimming improves safety, appearance, and tree health when done correctly. Whether you need
-                        clearance off a roof,
-                        driveway, or fence line — or you want to reduce risk before storm season — we trim with a clean,
-                        intentional approach
-                        that avoids unnecessary damage.
-                  </p>
-                  <p style="margin-top:10px;">
-                        <strong>Trim services include:</strong> limb removal for clearance, crown thinning (reduce wind
-                        load),
-                        deadwood removal, shaping, and raising the canopy for access/visibility.
-                  </p>
-                  <p style="margin-top:10px;">
-                        <strong>Good to know:</strong> We’ll talk through what you want the finished look to be (clean
-                        &amp; natural vs heavy cut),
-                        and we’ll recommend the safest approach based on the tree type and placement.
-                  </p>
-            </div>
-      </section>
-      <!-- STUMP GRINDING -->
-      <section class="section" id="stump-grinding">
-            <div class="container">
-                  <h2>Stump Grinding</h2>
-                  <p>
-                        Stumps are more than an eyesore — they can be a tripping hazard, attract pests, and get in the
-                        way of mowing, fencing,
-                        landscaping, or new construction. Stump grinding removes the stump below ground level so you can
-                        reclaim the space.
-                  </p>
-                  <p style="margin-top:10px;">
-                        <strong>Ideal for:</strong> yards, fence lines, driveways, building pads, and anywhere you want
-                        a clean finish.
-                  </p>
-                  <p style="margin-top:10px;">
-                        <strong>What to expect:</strong> We grind the stump down, and you’ll be left with grindings
-                        (wood chips).
-                        We can spread them on-site or haul them off if requested.
-                  </p>
-            </div>
-      </section>
-      <!-- CLEANUP / HAUL-OFF -->
-      <section class="section alt" id="cleanup">
-            <div class="container">
-                  <h2>Cleanup / Haul-Off</h2>
-                  <p>
-                        After tree work (or storm damage), debris piles can quickly become a headache. We offer cleanup
-                        and haul-off to remove
-                        limbs, brush, logs, and leftover material so your property looks clean and usable again.
-                  </p>
-                  <p style="margin-top:10px;">
-                        <strong>Cleanup options:</strong> brush/limb removal, log removal, pile breakdown, loading and
-                        haul-off,
-                        and final “jobsite ready” cleanup.
-                  </p>
-                  <p style="margin-top:10px;">
-                        <strong>Want it extra clean?</strong> Ask about bundling cleanup with trimming/removal so
-                        everything is handled in one visit.
-                  </p>
-            </div>
-      </section>
-      <!-- SCHEDULE -->
-      <section class="section" id="schedule">
-            <div class="container">
-                  <h2>Schedule a Free On-Site Walkthrough</h2>
-                  <p>
-                        The best way to price tree work accurately is to see access, hazards, and the finish you want.
-                        Call or text and we’ll set a time to walk the job and give you a clear plan.
-                  </p>
-                  <div style="margin-top:14px; display:flex; gap:12px; flex-wrap:wrap;">
-                        <a class="btn btn-primary" href="tel:+14783028815">Call Now</a>
-                        <a class="btn btn-outline" href="sms:+14783028815">Text Us</a>
-                  </div>
-            </div>
-      </section>
-      <!-- FOOTER -->
-      <footer class="footer">
-            <div class="container">
-                  <div class="footer-grid">
-                        <!-- Quick Links -->
-                        <div>
-                              <h3>Quick Links</h3>
-                              <ul class="footer-list">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="tree-services.html">Tree Services</a></li>
-                                    <li><a href="land-clearing.html">Land Clearing</a></li>
-                                    <li><a href="hardscaping.html">Hard Scaping</a></li>
-                              </ul>
-                        </div>
-                        <!-- Contact -->
-                        <div>
-                              <h3>Contact Us</h3>
-                              <ul class="footer-list">
-                                    <li><a href="tel:+14783028815">(478) 302-8815</a></li>
-                                    <li><a href="mailto:youremail@domain.com">youremail@domain.com</a></li>
-                              </ul>
-                        </div>
-                        <!-- Follow -->
-                        <div>
-                              <h3>Follow Us</h3>
-                              <ul class="social-list">
-                                    <li>
-                                          <a aria-label="Facebook" class="social-link" href="#">
-                                                <svg aria-hidden="true" class="social-icon" viewbox="0 0 24 24">
-                                                      <path d="M22 12a10 10 0 1 0-11.56 9.88v-7H7.9V12h2.54V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.88h-2.34v7A10 10 0 0 0 22 12z"
-                                                            fill="currentColor"></path>
-                                                </svg>
-                                                <span>@nextcutlandsolutions</span>
-                                          </a>
-                                    </li>
-                                    <li>
-                                          <a aria-label="Instagram" class="social-link" href="#">
-                                                <svg aria-hidden="true" class="social-icon" viewbox="0 0 24 24">
-                                                      <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.75 6a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 17.75 6z"
-                                                            fill="currentColor"></path>
-                                                </svg>
-                                                <span>@nextcutlandsolutions</span>
-                                          </a>
-                                    </li>
-                                    <li>
-                                          <a aria-label="TikTok" class="social-link" href="#">
-                                                <svg aria-hidden="true" class="social-icon" viewbox="0 0 24 24">
-                                                      <path d="M16.5 2h-2.2v13.2a2.7 2.7 0 1 1-2.7-2.7c.3 0 .6 0 .9.1V10c-.3 0-.6-.1-.9-.1A5.2 5.2 0 1 0 15 15.1V8.2c1.1 1.1 2.6 1.8 4.2 1.8V7.7c-1.6 0-2.9-1-3.4-2.5-.2-.5-.3-1.1-.3-1.7z"
-                                                            fill="currentColor"></path>
-                                                </svg>
-                                                <span>@nextcutlandsolutions</span>
-                                          </a>
-                                    </li>
-                              </ul>
-                        </div>
-                  </div>
-                  <div class="footer-meta">
-                        <p class="footer-small">© <span id="year"></span> NextCut Land Solutions</p>
-                  </div>
-            </div>
-      </footer>
-      <script src="script.js"></script>
+  <header>
+    <div class="topbar">
+      <span class="company-name" id="topbar-company-name">NextCut Land Solutions</span>
+      <a class="call-now-button" href="tel:+14783028815"><i class="fa-solid fa-square-phone"></i> (478)
+        302-8815</a>
+      <a class="follow-us-button"
+        href="https://www.facebook.com/profile.php?id=61576941093577&amp;mibextid=wwXIfr&amp;rdid=H2EJJz2gerYbssPw&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17nY7MvEBQ%2F%3Fmibextid%3DwwXIfr#"><i
+          class="fa-brands fa-square-facebook"></i> Follow us</a>
+    </div>
+    <nav id="navigation-bar">
+      <div id="logo-img-container">
+        <img alt="NextCut Land Solutions Logo" class="logo-img" src="Logo/See Through Logo.png" />
+      </div>
+
+      <button aria-controls="mobileMenu" aria-expanded="false" aria-label="Open menu" class="hamburger"
+        id="hamburgerBtn" type="button"><i class="fa-solid fa-bars"></i></button>
+
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <div class="dropdown">
+          <button class="dropbtn">Tree Services
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="tree-services.html#tree-removal">Tree Removal</a>
+            <a href="tree-services.html#tree-trimming">Tree Trimming</a>
+            <a href="tree-services.html#stump-grinding">Stump Grinding</a>
+            <a href="tree-services.html#cleanup">Cleanup / Hauld-Off</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Land Clearing
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="land-clearing.html#forestry-mulching">Forestry Mulching</a>
+            <a href="land-clearing.html#lot-clearing">Lot Clearing</a>
+            <a href="land-clearing.html#brush-clearing">Brush Clearing</a>
+            <a href="land-clearing.html#driveway-culvert">Driveway / Culvert</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Hard Scaping
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="hardscaping.html#pavers">Paver Patios &amp; Walkways</a>
+            <a href="hardscaping.html#gravel-pads">Gravel Pads</a>
+            <a href="hardscaping.html#edging">Edging &amp; Borders</a>
+            <a href="hardscaping.html#retaining">Retaining-Style Borders (Light Wall Work)</a>
+            <a href="hardscaping.html#drainage">Drainage Improvements</a>
+          </div>
+        </div>
+        <a href="waste-management.html">Junk Removal</a>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+
+        <details>
+          <summary>Tree Services <i class="fa fa-caret-down"></i></summary>
+          <div class="mobile-submenu">
+            <a href="tree-services.html#tree-removal">Tree Removal</a>
+            <a href="tree-services.html#tree-trimming">Tree Trimming</a>
+            <a href="tree-services.html#stump-grinding">Stump Grinding</a>
+            <a href="tree-services.html#cleanup">Cleanup / Hauld-Off</a>
+          </div>
+        </details>
+
+        <details>
+          <summary>Land Clearing <i class="fa fa-caret-down"></i></summary>
+          <div class="mobile-submenu">
+            <a href="land-clearing.html#forestry-mulching">Forestry Mulching</a>
+            <a href="land-clearing.html#lot-clearing">Lot Clearing</a>
+            <a href="land-clearing.html#brush-clearing">Brush Clearing</a>
+            <a href="land-clearing.html#driveway-culvert">Driveway / Culvert</a>
+          </div>
+        </details>
+
+        <details>
+          <summary>Hard Scaping <i class="fa fa-caret-down"></i></summary>
+          <div class="mobile-submenu">
+            <a href="hardscaping.html#pavers">Paver Patios &amp; Walkways</a>
+            <a href="hardscaping.html#gravel-pads">Gravel Pads</a>
+            <a href="hardscaping.html#edging">Edging &amp; Borders</a>
+            <a href="hardscaping.html#retaining">Retaining-Style Borders (Light Wall Work)</a>
+            <a href="hardscaping.html#drainage">Drainage Improvements</a>
+          </div>
+        </details>
+
+        <a href="waste-management.html">Junk Removal</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main aria-label="Tree Services" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <p class="badge">Locally Owned • Safe Work • Free On-Site Walkthrough</p>
+        <h1>Tree Services</h1>
+        <h2>
+          Tree Removal • Tree Trimming • Stump Grinding • Cleanup / Haul-Off
+        </h2>
+        <p class="hero-text">
+          Whether you’ve got a hazardous tree near the house, storm damage, or you just want your property cleaned up,
+          NextCut Land Solutions delivers safe, professional tree work with clean results. We’ll walk the site,
+          talk through options, and leave your yard looking better than we found it.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg"
+            href="https://www.facebook.com/profile.php?id=61576941093577&amp;mibextid=wwXIfr&amp;rdid=H2EJJz2gerYbssPw&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17nY7MvEBQ%2F%3Fmibextid%3DwwXIfr#"><i
+              class="fa-brands fa-square-facebook"></i> Follow us</a>
+          <a class="btn btn-outline btn-lg" href="tel:+14783028815">Call (478) 302-8815</a>
+        </div>
+        <div class="quick-info">
+          <div class="info-card">
+            <strong>Best For</strong>
+            <span>Hazard trees, storm damage, overgrowth, limb clearance, and stumps</span>
+          </div>
+          <div class="info-card">
+            <strong>Service Area</strong>
+            <span>Middle Georgia &amp; Surrounding Areas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right card -->
+      <aside aria-label="Request a walkthrough" class="quote-card">
+        <h3>Get a Fast Response</h3>
+        <p>Tell us what you need — we’ll reach out ASAP.</p>
+        <form class="form" onsubmit="event.preventDefault(); alert('Connect this to your email/CRM/booking tool.');">
+          <label>
+            Name
+            <input placeholder="Your name" required="" type="text" />
+          </label>
+          <label>
+            Phone
+            <input placeholder="(###) ###-####" required="" type="tel" />
+          </label>
+          <label>
+            Service
+            <select required="">
+              <option value="">Select a service</option>
+              <option>Tree Removal</option>
+              <option>Tree Trimming</option>
+              <option>Stump Grinding</option>
+              <option>Cleanup / Haul-Off</option>
+              <option>Storm Cleanup</option>
+            </select>
+          </label>
+          <label>
+            Notes
+            <textarea placeholder="Tree size, location (near house/fence), access, and your deadline (if any)" rows="4"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Request Walkthrough</button>
+          <p class="small">
+            Prefer calling? <a href="tel:+14783028815">(478) 302-8815</a>
+          </p>
+        </form>
+      </aside>
+    </div>
+  </main>
+
+  <!-- TREE REMOVAL -->
+  <section class="section" id="tree-removal">
+    <div class="container">
+      <h2>Tree Removal</h2>
+      <p>
+        If a tree is dead, leaning, splitting, or too close to structures, removal may be the safest option.
+        We evaluate the tree, the fall zone, and nearby hazards, then remove it using the safest method for your property.
+      </p>
+      <p style="margin-top:10px;">
+        <strong>Great for:</strong> dead/dying trees, storm-damaged trees, trees threatening homes, driveways, fences,
+        and trees in the way of new projects.
+      </p>
+      <p style="margin-top:10px;">
+        <strong>What to expect:</strong> We plan the cut, protect surrounding areas, and keep the jobsite clean.
+        Ask about stump grinding and haul-off to leave a finished look.
+      </p>
+    </div>
+  </section>
+
+  <!-- TREE TRIMMING -->
+  <section class="section alt" id="tree-trimming">
+    <div class="container">
+      <h2>Tree Trimming</h2>
+      <p>
+        Proper trimming helps your trees stay healthy, improves curb appeal, and reduces risk during storms.
+        We remove problem limbs, raise the canopy, and clear branches away from roofs, powerlines (where permitted), and walkways.
+      </p>
+      <p style="margin-top:10px;">
+        <strong>Common requests:</strong> limb clearance over driveways, pruning for health, reducing overhang on roofs,
+        and opening up sunlight for yards.
+      </p>
+      <p style="margin-top:10px;">
+        <strong>Heads up:</strong> Over-trimming can weaken a tree. We focus on clean cuts and smart pruning, not “topping.”
+      </p>
+    </div>
+  </section>
+
+  <!-- STUMP GRINDING -->
+  <section class="section" id="stump-grinding">
+    <div class="container">
+      <h2>Stump Grinding</h2>
+      <p>
+        Stumps can be an eyesore and a trip hazard — and they can make mowing a pain.
+        Stump grinding removes the stump below grade so the area can be leveled and used again.
+      </p>
+      <p style="margin-top:10px;">
+        <strong>Great for:</strong> clearing space for sod, driveways, fence lines, landscaping, or preventing regrowth.
+      </p>
+      <p style="margin-top:10px;">
+        <strong>What to expect:</strong> We grind the stump down and can either leave the grindings for backfill
+        or haul them off depending on what you want.
+      </p>
+    </div>
+  </section>
+
+  <!-- CLEANUP / HAUL-OFF -->
+  <section class="section alt" id="cleanup">
+    <div class="container">
+      <h2>Cleanup / Haul-Off</h2>
+      <p>
+        After trimming, removals, or storms, limbs and debris can pile up fast.
+        We can chip, load, and haul off brush and wood so your property is safe, clean, and usable again.
+      </p>
+      <p style="margin-top:10px;">
+        <strong>Great for:</strong> storm damage cleanup, stacked brush piles, post-project cleanup, and clearing downed limbs.
+      </p>
+      <p style="margin-top:10px;">
+        <strong>Options:</strong> haul-off only, full cleanup after service, or combine with land clearing for bigger jobs.
+      </p>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section class="section" id="schedule">
+    <div class="container">
+      <h2>Schedule a Free On-Site Walkthrough</h2>
+      <p>
+        Tree work is all about access, hazards, and what finish you want. Call or text and we’ll set a time
+        to walk the property and give you a clear plan.
+      </p>
+      <div style="margin-top:14px; display:flex; gap:12px; flex-wrap:wrap;">
+        <a class="btn btn-primary" href="tel:+14783028815">Call Now</a>
+        <a class="btn btn-outline" href="sms:+14783028815">Text Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Quick Links -->
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="tree-services.html">Tree Services</a></li>
+            <li><a href="land-clearing.html">Land Clearing</a></li>
+            <li><a href="hardscaping.html">Hard Scaping</a></li>
+            <li><a href="waste-management.html">Junk Removal</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div>
+          <h3>Contact Us</h3>
+          <ul class="footer-list">
+            <li><a href="tel:+14783028815">(478) 302-8815</a></li>
+            <li><a href="mailto:youremail@domain.com">youremail@domain.com</a></li>
+          </ul>
+        </div>
+        <!-- Follow -->
+        <div>
+          <h3>Follow Us</h3>
+          <ul class="social-list">
+            <li>
+              <a aria-label="Facebook" class="social-link"
+                href="https://www.facebook.com/profile.php?id=61576941093577&amp;mibextid=wwXIfr&amp;rdid=H2EJJz2gerYbssPw&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17nY7MvEBQ%2F%3Fmibextid%3DwwXIfr#">
+                <svg aria-hidden="true" class="social-icon" viewbox="0 0 24 24">
+                  <path
+                    d="M22 12a10 10 0 1 0-11.56 9.88v-7H7.9V12h2.54V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.88h-2.34v7A10 10 0 0 0 22 12z"
+                    fill="currentColor"></path>
+                </svg>
+                <span>NextCut Land Solutions</span>
+              </a>
+            </li>
+            <li>
+              <a aria-label="Instagram" class="social-link" href="#">
+                <svg aria-hidden="true" class="social-icon" viewbox="0 0 24 24">
+                  <path
+                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.75 6a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 17.75 6z"
+                    fill="currentColor"></path>
+                </svg>
+                <span>@nextcutlandsolutions</span>
+              </a>
+            </li>
+            <li>
+              <a aria-label="TikTok" class="social-link" href="#">
+                <svg aria-hidden="true" class="social-icon" viewbox="0 0 24 24">
+                  <path
+                    d="M16.5 2h-2.2v13.2a2.7 2.7 0 1 1-2.7-2.7c.3 0 .6 0 .9.1V10c-.3 0-.6-.1-.9-.1A5.2 5.2 0 1 0 15 15.1V8.2c1.1 1.1 2.6 1.8 4.2 1.8V7.7c-1.6 0-2.9-1-3.4-2.5-.2-.5-.3-1.1-.3-1.7z"
+                    fill="currentColor"></path>
+                </svg>
+                <span>@nextcutlandsolutions</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <p class="footer-small">© <span id="year"></span> NextCut Land Solutions</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script>
+    const hamburgerBtn = document.getElementById("hamburgerBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    hamburgerBtn.addEventListener("click", () => {
+      const isOpen = mobileMenu.classList.toggle("open");
+      hamburgerBtn.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    // Close menu when clicking a link (optional but nice)
+    mobileMenu.addEventListener("click", (e) => {
+      if (e.target.tagName === "A") {
+        mobileMenu.classList.remove("open");
+        hamburgerBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    // If you resize wider than 600px, ensure the menu closes
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 600) {
+        mobileMenu.classList.remove("open");
+        hamburgerBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+  </script>
 </body>
 
 </html>
