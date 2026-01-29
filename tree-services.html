@@ -177,13 +177,13 @@
     </div>
   </main>
   <!-- Slideshow container -->
-  <div class="slideshow-container">
+<div class="slideshow-container">
 
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
       <div class="numbertext">1 / 8</div>
-      <img src="Images\Machine grinding tree.png" style="width:100%">
-      <div class="text">Forestry Mulching</div>
+      <img src="Images\Land clearing, Forestry Mulching, & grading.png" style="width:100%">
+      <div class="text">Land Clearing, Forestry Mulching, & Grading</div>
     </div>
 
     <div class="mySlides fade">
@@ -206,23 +206,26 @@
 
     <div class="mySlides fade">
       <div class="numbertext">5 / 8</div>
-      <img src="Images\Junk Removal.png" style="width:100%">
-      <div class="text">Junk Removal</div>
+      <img src="Images\Machine grinding tree.png" style="width:100%">
+      <div class="text">Forestry Mulching</div>
     </div>
+
     <div class="mySlides fade">
       <div class="numbertext">6 / 8</div>
-      <img src="Images\Pavers, Patios, & Walkways.png" style="width:100%">
-      <div class="text">Pavers, Patios, & Walkways</div>
+      <img src="Images\Land Clearing 2.png" style="width:100%">
+      <div class="text">Land Clearing</div>
     </div>
+
     <div class="mySlides fade">
       <div class="numbertext">7 / 8</div>
-      <img src="Images\Gravel Pads.jpg" style="width:100%">
-      <div class="text">Gravel Pads</div>
+      <img src="Images\Tree Trimming 2.png" style="width:100%">
+      <div class="text">Tree Trimming</div>
     </div>
+
     <div class="mySlides fade">
       <div class="numbertext">8 / 8</div>
-      <img src="Images\Retaining wall.png" style="width:100%">
-      <div class="text">Retaining Wall</div>
+      <img src="Images\Tree Removal 2.png" style="width:100%">
+      <div class="text">Tree Removal</div>
     </div>
 
     <!-- Next and previous buttons -->
@@ -242,6 +245,87 @@
     <span class="dot" onclick="currentSlide(7)"></span>
     <span class="dot" onclick="currentSlide(8)"></span>
   </div>
+
+  <!--Reviews Carousel-->
+  <section class = "section alt">
+    <div class="carousel-wrapper">
+      <button class="nav-btn prev-btn" id="prevBtn" onclick="moveSlide(-1)">&#10094;</button>
+      <div class="carousel-container" id="carousel">
+
+        <div class="review-card">
+          <div class="review-header">
+            <img src="Review Photos\M.K. Cheung.png" alt="Profile Photo" class="profile-photo">
+            <div class="reviewer-info">
+              <p class="reviewer-name">M.K. Cheung</p>
+              <div class="star-rating">
+                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">"Juan is a great gentleman who responds fast in your needs for my tree services. He
+            also worked with me about my budget and I appreciate his willingness to make sure his and his teams work is
+            up to par..."</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <img src="Review Photos\Gerardo Rodriguez.png" alt="User Name" class="profile-photo">
+            <div class="reviewer-info">
+              <p class="reviewer-name">Gerardo Rodriguez</p>
+              <div class="star-rating">
+                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">"I recently used them for tree removal, and I couldn't be happier! Their team was
+            professional, efficient, and knowledgeable. They arrived on time, worked safely, and left my yard spotless
+            after the job..."</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <img src="Review Photos\Drew Cole.png" alt="User Name" class="profile-photo">
+            <div class="reviewer-info">
+              <p class="reviewer-name">Drew Cole</p>
+              <div class="star-rating">
+                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">"Prompt and courteous service. Crew cleaned everything well."</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <img src="Review Photos\Sam Mondragon.png" alt="User Name" class="profile-photo">
+            <div class="reviewer-info">
+              <p class="reviewer-name">Sam Mondragon</p>
+              <div class="star-rating">
+                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">"He and his crew did an amazing job cutting down my trees in the back. Very
+            professional and time efficient."</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <img src="Review Photos\Diego Vel.png" alt="User Name" class="profile-photo">
+            <div class="reviewer-info">
+              <p class="reviewer-name">Diego Vel</p>
+              <div class="star-rating">
+                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+              </div>
+            </div>
+          </div>
+          <p class="review-text">"These guys are awesome at their job highly recommended them"</p>
+        </div>
+      </div>
+
+      <button class="nav-btn next-btn" id="nextBtn" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </section>
 
   <!-- TREE REMOVAL -->
   <section class="section" id="tree-removal">

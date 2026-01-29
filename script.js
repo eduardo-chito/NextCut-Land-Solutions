@@ -98,14 +98,45 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
 }
+
+const carousel = document.getElementById('carousel');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+function updateArrows() {
+  const scrollLeft = carousel.scrollLeft;
+  const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+
+  // Update Prev Arrow (Grey if at start)
+  prevBtn.style.color = scrollLeft <= 5 ? "var(--arrow-disabled)" : "var(--arrow-enabled)";
+  prevBtn.style.cursor = scrollLeft <= 5 ? "default" : "pointer";
+
+  // Update Next Arrow (Grey if at end)
+  nextBtn.style.color = scrollLeft >= maxScroll - 5 ? "var(--arrow-disabled)" : "var(--arrow-enabled)";
+  nextBtn.style.cursor = scrollLeft >= maxScroll - 5 ? "default" : "pointer";
+}
+
+function moveSlide(direction) {
+  const cardWidth = carousel.querySelector('.review-card').offsetWidth + 20;
+  carousel.scrollBy({
+    left: direction * cardWidth,
+    behavior: 'smooth'
+  });
+}
+
+// Listen for scroll events to update arrow colors
+carousel.addEventListener('scroll', updateArrows);
+// Initial check
+window.addEventListener('load', updateArrows);
+window.addEventListener('resize', updateArrows);
