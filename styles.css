@@ -1118,3 +1118,10 @@ profile-placeholder {
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+.review-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
