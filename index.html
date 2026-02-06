@@ -1,460 +1,610 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>NextCut Land Solutions</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script
+      crossorigin="anonymous"
+      src="https://kit.fontawesome.com/72978efe03.js"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>NextCut Land Solutions</title>
-  <link href="styles.css" rel="stylesheet" />
-  <script crossorigin="anonymous" src="https://kit.fontawesome.com/72978efe03.js"></script>
-</head>
+  <body>
+    <header>
+      <div class="topbar">
+        <span class="company-name" id="topbar-company-name"
+          >NextCut Land Solutions</span
+        >
+        <a class="call-now-button" href="tel:+14783028815"
+          ><i class="fa-solid fa-square-phone"></i> (478) 302-8815</a
+        >
+        <a
+          class="follow-us-button"
+          href="https://www.facebook.com/profile.php?id=61576941093577&amp;mibextid=wwXIfr&amp;rdid=H2EJJz2gerYbssPw&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17nY7MvEBQ%2F%3Fmibextid%3DwwXIfr#"
+          ><i class="fa-brands fa-square-facebook"></i> Follow us</a
+        >
+      </div>
+      <nav id="navigation-bar">
+        <div id="logo-img-container">
+          <img
+            alt="NextCut Land Solutions Logo"
+            class="logo-img"
+            src="Logo/See Through Logo.png"
+          />
+        </div>
+        <button
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+          aria-label="Open menu"
+          class="hamburger"
+          id="hamburgerBtn"
+          type="button"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Tree Services
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="tree-services.html#tree-removal">Tree Removal</a>
+              <a href="tree-services.html#tree-trimming">Tree Trimming</a>
+              <a href="tree-services.html#stump-grinding">Stump Grinding</a>
+              <a href="tree-services.html#cleanup">Cleanup / Hauld-Off</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Land Clearing
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="land-clearing.html#forestry-mulching"
+                >Forestry Mulching</a
+              >
+              <a href="land-clearing.html#lot-clearing">Lot Clearing</a>
+              <a href="land-clearing.html#brush-clearing">Brush Clearing</a>
+              <a href="land-clearing.html#driveway-culvert"
+                >Driveway / Culvert</a
+              >
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Hard Scaping
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="hardscaping.html#pavers">Paver Patios &amp; Walkways</a>
+              <a href="hardscaping.html#gravel-pads">Gravel Pads</a>
+              <a href="hardscaping.html#edging">Edging &amp; Borders</a>
+              <a href="hardscaping.html#retaining"
+                >Retaining-Style Borders (Light Wall Work)</a
+              >
+              <a href="hardscaping.html#drainage">Drainage Improvements</a>
+            </div>
+          </div>
+          <a href="waste-management.html">Junk Removal</a>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="index.html">Home</a><a href="about.html">About Us</a>
+          <details>
+            <summary>Tree Services <i class="fa fa-caret-down"></i></summary>
+            <div class="mobile-submenu">
+              <a href="tree-services.html#tree-removal">Tree Removal</a
+              ><a href="tree-services.html#tree-trimming">Tree Trimming</a
+              ><a href="tree-services.html#stump-grinding">Stump Grinding</a
+              ><a href="tree-services.html#cleanup">Cleanup / Hauld-Off</a>
+            </div>
+          </details>
+          <details>
+            <summary>Land Clearing <i class="fa fa-caret-down"></i></summary>
+            <div class="mobile-submenu">
+              <a href="land-clearing.html#forestry-mulching"
+                >Forestry Mulching</a
+              ><a href="land-clearing.html#lot-clearing">Lot Clearing</a
+              ><a href="land-clearing.html#brush-clearing">Brush Clearing</a
+              ><a href="land-clearing.html#driveway-culvert"
+                >Driveway / Culvert</a
+              >
+            </div>
+          </details>
+          <details>
+            <summary>Hard Scaping <i class="fa fa-caret-down"></i></summary>
+            <div class="mobile-submenu">
+              <a href="hardscaping.html#pavers">Paver Patios &amp; Walkways</a
+              ><a href="hardscaping.html#gravel-pads">Gravel Pads</a
+              ><a href="hardscaping.html#edging">Edging &amp; Borders</a
+              ><a href="hardscaping.html#retaining"
+                >Retaining-Style Borders (Light Wall Work)</a
+              ><a href="hardscaping.html#drainage">Drainage Improvements</a>
+            </div>
+          </details>
+          <a href="waste-management.html">Junk Removal</a>
+        </div>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <div class="topbar">
-      <span class="company-name" id="topbar-company-name">NextCut Land Solutions</span>
-      <a class="call-now-button" href="tel:+14783028815"><i class="fa-solid fa-square-phone"></i> (478)
-        302-8815</a>
-      <a class="follow-us-button"
-        href="https://www.facebook.com/profile.php?id=61576941093577&amp;mibextid=wwXIfr&amp;rdid=H2EJJz2gerYbssPw&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17nY7MvEBQ%2F%3Fmibextid%3DwwXIfr#"><i
-          class="fa-brands fa-square-facebook"></i> Follow us</a>
-    </div>
-    <nav id="navigation-bar">
-      <div id="logo-img-container">
-        <img alt="NextCut Land Solutions Logo" class="logo-img" src="Logo/See Through Logo.png" />
-      </div><button aria-controls="mobileMenu" aria-expanded="false" aria-label="Open menu" class="hamburger"
-        id="hamburgerBtn" type="button"><i class="fa-solid fa-bars"></i></button>
-      <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <div class="dropdown">
-          <button class="dropbtn">Tree Services
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="tree-services.html#tree-removal">Tree Removal</a>
-            <a href="tree-services.html#tree-trimming">Tree Trimming</a>
-            <a href="tree-services.html#stump-grinding">Stump Grinding</a>
-            <a href="tree-services.html#cleanup">Cleanup / Hauld-Off</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">Land Clearing
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="land-clearing.html#forestry-mulching">Forestry Mulching</a>
-            <a href="land-clearing.html#lot-clearing">Lot Clearing</a>
-            <a href="land-clearing.html#brush-clearing">Brush Clearing</a>
-            <a href="land-clearing.html#driveway-culvert">Driveway / Culvert</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">Hard Scaping
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="hardscaping.html#pavers">Paver Patios &amp; Walkways</a>
-            <a href="hardscaping.html#gravel-pads">Gravel Pads</a>
-            <a href="hardscaping.html#edging">Edging &amp; Borders</a>
-            <a href="hardscaping.html#retaining">Retaining-Style Borders (Light Wall Work)</a>
-            <a href="hardscaping.html#drainage">Drainage Improvements</a>
-          </div>
-        </div>
-        <a href="waste-management.html">Junk Removal</a>
-      </div>
-      <div class="mobile-menu" id="mobileMenu"><a href="index.html">Home</a><a href="about.html">About Us</a>
-        <details>
-          <summary>Tree Services <i class="fa fa-caret-down"></i></summary>
-          <div class="mobile-submenu"><a href="tree-services.html#tree-removal">Tree Removal</a><a
-              href="tree-services.html#tree-trimming">Tree Trimming</a><a href="tree-services.html#stump-grinding">Stump
-              Grinding</a><a href="tree-services.html#cleanup">Cleanup / Hauld-Off</a></div>
-        </details>
-        <details>
-          <summary>Land Clearing <i class="fa fa-caret-down"></i></summary>
-          <div class="mobile-submenu"><a href="land-clearing.html#forestry-mulching">Forestry Mulching</a><a
-              href="land-clearing.html#lot-clearing">Lot Clearing</a><a href="land-clearing.html#brush-clearing">Brush
-              Clearing</a><a href="land-clearing.html#driveway-culvert">Driveway / Culvert</a></div>
-        </details>
-        <details>
-          <summary>Hard Scaping <i class="fa fa-caret-down"></i></summary>
-          <div class="mobile-submenu"><a href="hardscaping.html#pavers">Paver Patios &amp; Walkways</a><a
-              href="hardscaping.html#gravel-pads">Gravel Pads</a><a href="hardscaping.html#edging">Edging &amp;
-              Borders</a><a href="hardscaping.html#retaining">Retaining-Style Borders (Light Wall Work)</a><a
-              href="hardscaping.html#drainage">Drainage Improvements</a></div>
-        </details><a href="waste-management.html">Junk Removal</a>
-      </div>
-    </nav>
-  </header>
-
-  <main class="hero" id="home">
-    <div class="container hero-inner">
-      <div class="hero-content">
-        <p class="badge">Locally Owned • Licensed & Insured • Free On-Site Walkthrough</p>
-        <h1>NextCut Land Solutions</h1>
-        <h2>
-          Tree Services • Land Clearing • Hard Scaping • Junk Removal
-        </h2>
-        <p class="hero-text">
-          We help homeowners, landowners, and contractors clear property quickly and safely.
-          Whether you need brush cleared, trees removed, stumps ground, or a full lot prepped for building,
-          NextCut delivers clean results and professional service.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary btn-lg"
-            href="https://www.facebook.com/profile.php?id=61576941093577&amp;mibextid=wwXIfr&amp;rdid=H2EJJz2gerYbssPw&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17nY7MvEBQ%2F%3Fmibextid%3DwwXIfr#"><i
-              class="fa-brands fa-square-facebook"></i> Follow us</a>
-          <a class="btn btn-outline btn-lg" href="tel:+14783028815">Call (478) 302-8815</a>
-        </div>
-        <div class="quick-info">
-          <div class="info-card">
-            <strong>Service Area</strong>
-            <span>Middle Georgia &amp; Surrounding Areas (Willing to Travel)</span>
-          </div>
-        </div>
-      </div>
-      <aside aria-label="Quick quote form" class="quote-card">
-        <h3>Get a Fast Response</h3>
-        <p>Tell us what you need — we’ll reach out ASAP.</p>
-        <form class="form" action="https://formspree.io/f/mdaakkzn" method="POST">
-          <label>
-            Name
-            <input name="name" placeholder="Your name" required="" type="text" />
-          </label>
-          <label>
-            Phone
-            <input name="phone" placeholder="(###) ###-####" required="" type="tel" />
-          </label>
-          <label>
-            Service
-            <select name="option" required="">
-              <option value="">Select a service</option>
-              <option>Brush Clearing</option>
-              <option>Cleanup / Haul-Off</option>
-              <option>Drainage Improvements</option>
-              <option>Driveway/Culvert</option>
-              <option>Dumpster Rental</option>
-              <option>Edging & Borders</option>
-              <option>Forestry Mulching</option>
-              <option>Gravel Pads</option>
-              <option>Junk Removal</option>
-              <option>Lot Clearing</option>
-              <option>Paver Patios & Walkways</option>
-              <option>Retaining-Style Borders (Light Wall Work)</option>
-              <option>Stump Grinding</option>
-              <option>Tree Removal</option>
-              <option>Tree Trimming</option>
-              <option>Other</option>
-            </select>
-          </label>
-          <label>
-            Notes
-            <textarea name="notes" placeholder="Describe the job (acreage, access, deadlines, etc.)"
-              rows="4"></textarea>
-          </label>
-          <button class="btn btn-primary" type="submit">Request Quote</button>
-          <p class="small">
-            Prefer calling? <a href="tel:+14783028815">(478) 302-8815</a>
+    <main class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="badge">
+            Locally Owned • Licensed & Insured • Free On-Site Walkthrough
           </p>
-        </form>
-      </aside>
-    </div>
-  </main>
-
-  <!-- Slideshow container -->
-  <div class="slideshow-container">
-
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 15</div>
-      <img src="Images\Land clearing, Forestry Mulching, & grading.png" style="width:100%">
-      <div class="text">Land Clearing</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 15</div>
-      <img src="Images\Stump Grinding.png" style="width:100%">
-      <div class="text">Stump Grinding</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 15</div>
-      <img src="Images\Tree Trimming.png" style="width:100%">
-      <div class="text">Tree Trimming</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">4 / 15</div>
-      <img src="Images\Tree Removal.png" style="width:100%">
-      <div class="text">Tree Removal</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">5 / 15</div>
-      <img src="Images\Junk Removal.png" style="width:100%">
-      <div class="text">Junk Removal</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">6 / 15</div>
-      <img src="Images\Pavers, Patios, & Walkways.png" style="width:100%">
-      <div class="text">Pavers, Patios, & Walkways</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">7 / 15</div>
-      <img src="Images\Gravel Pads.jpg" style="width:100%">
-      <div class="text">Gravel Pads</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">8 / 15</div>
-      <img src="Images\Retaining wall.png" style="width:100%">
-      <div class="text">Retaining Wall</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">9 / 15</div>
-      <img src="Images\Machine grinding tree.png" style="width:100%">
-      <div class="text">Forestry Mulching</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">10 / 15</div>
-      <img src="Images\Land Clearing 2.png" style="width:100%">
-      <div class="text">Land Clearing</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">11 / 15</div>
-      <img src="Images\Tree Trimming 2.png" style="width:100%">
-      <div class="text">Tree Trimming</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">12 / 15</div>
-      <img src="Images\Retaining wall 2.png" style="width:100%">
-      <div class="text">Retaining Wall</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">13 / 15</div>
-      <img src="Images\Patios & Pavers.jpg" style="width:100%">
-      <div class="text">Patios & Pavers</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">14 / 15</div>
-      <img src="Images\Tree Removal 2.png" style="width:100%">
-      <div class="text">Tree Removal</div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">15 / 15</div>
-      <img src="Images\Grading 2.png" style="width:100%">
-      <div class="text">Grading</div>
-    </div>
-
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-    <span class="dot" onclick="currentSlide(5)"></span>
-    <span class="dot" onclick="currentSlide(6)"></span>
-    <span class="dot" onclick="currentSlide(7)"></span>
-    <span class="dot" onclick="currentSlide(8)"></span>
-    <span class="dot" onclick="currentSlide(9)"></span>
-    <span class="dot" onclick="currentSlide(10)"></span>
-    <span class="dot" onclick="currentSlide(11)"></span>
-    <span class="dot" onclick="currentSlide(12)"></span>
-    <span class="dot" onclick="currentSlide(13)"></span>
-    <span class="dot" onclick="currentSlide(14)"></span>
-    <span class="dot" onclick="currentSlide(15)"></span>
-  </div>
-
-  <!--Reviews Carousel-->
-  <section class = "section alt">
-    <h2 class="review-title">What Our Customers Are Saying</h2>
-    <div class="carousel-wrapper">
-      <button class="nav-btn prev-btn" id="prevBtn" onclick="moveSlide(-1)">&#10094;</button>
-      <div class="carousel-container" id="carousel">
-
-        <div class="review-card">
-          <div class="review-header">
-            <img src="Review Photos\M.K. Cheung.png" alt="Profile Photo" class="profile-photo">
-            <div class="reviewer-info">
-              <p class="reviewer-name">M.K. Cheung</p>
-              <div class="star-rating">
-                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-              </div>
+          <h1>NextCut Land Solutions</h1>
+          <h2>Tree Services • Land Clearing • Hard Scaping • Junk Removal</h2>
+          <p class="hero-text">
+            We help homeowners, landowners, and contractors clear property
+            quickly and safely. Whether you need brush cleared, trees removed,
+            stumps ground, or a full lot prepped for building, NextCut delivers
+            clean results and professional service.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="btn btn-primary btn-lg"
+              href="https://www.facebook.com/profile.php?id=61576941093577&amp;mibextid=wwXIfr&amp;rdid=H2EJJz2gerYbssPw&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17nY7MvEBQ%2F%3Fmibextid%3DwwXIfr#"
+              ><i class="fa-brands fa-square-facebook"></i> Follow us</a
+            >
+            <a class="btn btn-outline btn-lg" href="tel:+14783028815"
+              >Call (478) 302-8815</a
+            >
+          </div>
+          <div class="quick-info">
+            <div class="info-card">
+              <strong>Service Area</strong>
+              <span
+                >Middle Georgia &amp; Surrounding Areas (Willing to
+                Travel)</span
+              >
             </div>
           </div>
-          <p class="review-text">"Juan is a great gentleman who responds fast in your needs for my tree services. He
-            also worked with me about my budget and I appreciate his willingness to make sure his and his teams work is
-            up to par..."</p>
         </div>
+        <aside aria-label="Quick quote form" class="quote-card">
+          <h3>Get a Fast Response</h3>
+          <p>Tell us what you need — we’ll reach out ASAP.</p>
+          <form
+            class="form"
+            action="https://formspree.io/f/mdaakkzn"
+            method="POST"
+          >
+            <label>
+              Name
+              <input
+                name="name"
+                placeholder="Your name"
+                required=""
+                type="text"
+              />
+            </label>
+            <label>
+              Phone
+              <input
+                name="phone"
+                placeholder="(###) ###-####"
+                required=""
+                type="tel"
+              />
+            </label>
+            <label>
+              Service
+              <select name="option" required="">
+                <option value="">Select a service</option>
+                <option>Brush Clearing</option>
+                <option>Cleanup / Haul-Off</option>
+                <option>Construction Debris Haul-Off</option>
+                <option>Drainage Improvements</option>
+                <option>Driveway/Culvert</option>
+                <option>Dumpster Rental</option>
+                <option>Edging & Borders</option>
+                <option>Forestry Mulching</option>
+                <option>Garage, Shed & Property Cleanouts</option>
+                <option>Gravel Pads</option>
+                <option>Household Junk Pickup</option>
+                <option>Junk Removal</option>
+                <option>Lot Clearing</option>
+                <option>Paver Patios & Walkways</option>
+                <option>Retaining-Style Borders (Light Wall Work)</option>
+                <option>Stump Grinding</option>
+                <option>Tree Removal</option>
+                <option>Tree Trimming</option>
+                <option>Other</option>
+                <option>Yard Debris & Storm Cleanup</option>
+              </select>
+            </label>
+            <label>
+              Notes
+              <textarea
+                name="notes"
+                placeholder="Describe the job (acreage, access, deadlines, etc.)"
+                rows="4"
+              ></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Request Quote</button>
+            <p class="small">
+              Prefer calling? <a href="tel:+14783028815">(478) 302-8815</a>
+            </p>
+          </form>
+        </aside>
+      </div>
+    </main>
 
-        <div class="review-card">
-          <div class="review-header">
-            <img src="Review Photos\Gerardo Rodriguez.png" alt="User Name" class="profile-photo">
-            <div class="reviewer-info">
-              <p class="reviewer-name">Gerardo Rodriguez</p>
-              <div class="star-rating">
-                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-              </div>
-            </div>
-          </div>
-          <p class="review-text">"I recently used them for tree removal, and I couldn't be happier! Their team was
-            professional, efficient, and knowledgeable. They arrived on time, worked safely, and left my yard spotless
-            after the job..."</p>
-        </div>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
 
-        <div class="review-card">
-          <div class="review-header">
-            <img src="Review Photos\Drew Cole.png" alt="User Name" class="profile-photo">
-            <div class="reviewer-info">
-              <p class="reviewer-name">Drew Cole</p>
-              <div class="star-rating">
-                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-              </div>
-            </div>
-          </div>
-          <p class="review-text">"Prompt and courteous service. Crew cleaned everything well."</p>
-        </div>
-
-        <div class="review-card">
-          <div class="review-header">
-            <img src="Review Photos\Sam Mondragon.png" alt="User Name" class="profile-photo">
-            <div class="reviewer-info">
-              <p class="reviewer-name">Sam Mondragon</p>
-              <div class="star-rating">
-                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-              </div>
-            </div>
-          </div>
-          <p class="review-text">"He and his crew did an amazing job cutting down my trees in the back. Very
-            professional and time efficient."</p>
-        </div>
-
-        <div class="review-card">
-          <div class="review-header">
-            <img src="Review Photos\Diego Vel.png" alt="User Name" class="profile-photo">
-            <div class="reviewer-info">
-              <p class="reviewer-name">Diego Vel</p>
-              <div class="star-rating">
-                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-              </div>
-            </div>
-          </div>
-          <p class="review-text">"These guys are awesome at their job highly recommended them"</p>
-        </div>
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 15</div>
+        <img
+          src="Images\Forestry Mulching (Before & After) (1).png"
+          style="width: 100%"
+        />
+        <div class="text">Forestry Mulching</div>
       </div>
 
-      <button class="nav-btn next-btn" id="nextBtn" onclick="moveSlide(1)">&#10095;</button>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 15</div>
+        <img src="Images\Stump Grinding.png" style="width: 100%" />
+        <div class="text">Stump Grinding</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 15</div>
+        <img src="Images\Tree Trimming.png" style="width: 100%" />
+        <div class="text">Tree Trimming</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 15</div>
+        <img
+          src="Images\Forestry Mulching (Before & After).png"
+          style="width: 100%"
+        />
+        <div class="text">Forestry Mulching</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 15</div>
+        <img
+          src="Images\Stump Grinding (Before & After).png"
+          style="width: 100%"
+        />
+        <div class="text">Stump Grinding</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 15</div>
+        <img
+          src="Images\Forestry Mulching (Before & After) (2).png"
+          style="width: 100%"
+        />
+        <div class="text">Forestry Mulching</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 15</div>
+        <img
+          src="Images\Land clearing, Forestry Mulching, & grading.png"
+          style="width: 100%"
+        />
+        <div class="text">Land Clearing</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 15</div>
+        <img src="Images\Gravel Pads.jpg" style="width: 100%" />
+        <div class="text">Gravel Pads</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">9 / 15</div>
+        <img src="Images\Retaining wall.png" style="width: 100%" />
+        <div class="text">Retaining Wall</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">10 / 15</div>
+        <img src="Images\Land Clearing 2.png" style="width: 100%" />
+        <div class="text">Land Clearing</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">11 / 15</div>
+        <img src="Images\Tree Trimming 2.png" style="width: 100%" />
+        <div class="text">Tree Trimming</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">12 / 15</div>
+        <img src="Images\Retaining wall 2.png" style="width: 100%" />
+        <div class="text">Retaining Wall</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">13 / 15</div>
+        <img src="Images\Patios & Pavers.jpg" style="width: 100%" />
+        <div class="text">Patios & Pavers</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">14 / 15</div>
+        <img src="Images\Tree Removal 2.png" style="width: 100%" />
+        <div class="text">Tree Removal</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">15 / 15</div>
+        <img src="Images\Grading 2.png" style="width: 100%" />
+        <div class="text">Grading</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-  </section>
+    <br />
 
+    <!-- The dots/circles -->
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+      <span class="dot" onclick="currentSlide(11)"></span>
+      <span class="dot" onclick="currentSlide(12)"></span>
+      <span class="dot" onclick="currentSlide(13)"></span>
+      <span class="dot" onclick="currentSlide(14)"></span>
+      <span class="dot" onclick="currentSlide(15)"></span>
+    </div>
 
-  <!-- SECTIONS (placeholders) -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <!-- Quick Links -->
-        <div>
-          <h3>Quick Links</h3>
-          <ul class="footer-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="tree-services.html">Tree Services</a></li>
-            <li><a href="land-clearing.html">Land Clearing</a></li>
-            <li><a href="hardscaping.html">Hard Scaping</a></li>
-            <li><a href="waste-management.html">Junk Removal</a></li>
-          </ul>
+    <!--Reviews Carousel-->
+    <section class="section alt">
+      <h2 class="review-title">What Our Customers Are Saying</h2>
+      <div class="carousel-wrapper">
+        <button class="nav-btn prev-btn" id="prevBtn" onclick="moveSlide(-1)">
+          &#10094;
+        </button>
+        <div class="carousel-container" id="carousel">
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                src="Review Photos\M.K. Cheung.png"
+                alt="Profile Photo"
+                class="profile-photo"
+              />
+              <div class="reviewer-info">
+                <p class="reviewer-name">M.K. Cheung</p>
+                <div class="star-rating">
+                  <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+                  ><span>&#9733;</span><span>&#9733;</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-text">
+              "Juan is a great gentleman who responds fast in your needs for my
+              tree services. He also worked with me about my budget and I
+              appreciate his willingness to make sure his and his teams work is
+              up to par..."
+            </p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                src="Review Photos\Gerardo Rodriguez.png"
+                alt="User Name"
+                class="profile-photo"
+              />
+              <div class="reviewer-info">
+                <p class="reviewer-name">Gerardo Rodriguez</p>
+                <div class="star-rating">
+                  <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+                  ><span>&#9733;</span><span>&#9733;</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-text">
+              "I recently used them for tree removal, and I couldn't be happier!
+              Their team was professional, efficient, and knowledgeable. They
+              arrived on time, worked safely, and left my yard spotless after
+              the job..."
+            </p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                src="Review Photos\Drew Cole.png"
+                alt="User Name"
+                class="profile-photo"
+              />
+              <div class="reviewer-info">
+                <p class="reviewer-name">Drew Cole</p>
+                <div class="star-rating">
+                  <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+                  ><span>&#9733;</span><span>&#9733;</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-text">
+              "Prompt and courteous service. Crew cleaned everything well."
+            </p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                src="Review Photos\Sam Mondragon.png"
+                alt="User Name"
+                class="profile-photo"
+              />
+              <div class="reviewer-info">
+                <p class="reviewer-name">Sam Mondragon</p>
+                <div class="star-rating">
+                  <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+                  ><span>&#9733;</span><span>&#9733;</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-text">
+              "He and his crew did an amazing job cutting down my trees in the
+              back. Very professional and time efficient."
+            </p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <img
+                src="Review Photos\Diego Vel.png"
+                alt="User Name"
+                class="profile-photo"
+              />
+              <div class="reviewer-info">
+                <p class="reviewer-name">Diego Vel</p>
+                <div class="star-rating">
+                  <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span
+                  ><span>&#9733;</span><span>&#9733;</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-text">
+              "These guys are awesome at their job highly recommended them"
+            </p>
+          </div>
         </div>
-        <!-- Contact -->
-        <div>
-          <h3>Contact Us</h3>
-          <ul class="footer-list">
-            <li><a href="tel:+14783028815">(478) 302-8815</a></li>
-            <li><a href="mailto:youremail@domain.com">youremail@domain.com</a></li>
-          </ul>
+
+        <button class="nav-btn next-btn" id="nextBtn" onclick="moveSlide(1)">
+          &#10095;
+        </button>
+      </div>
+    </section>
+
+    <!-- SECTIONS (placeholders) -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Quick Links -->
+          <div>
+            <h3>Quick Links</h3>
+            <ul class="footer-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="tree-services.html">Tree Services</a></li>
+              <li><a href="land-clearing.html">Land Clearing</a></li>
+              <li><a href="hardscaping.html">Hard Scaping</a></li>
+              <li><a href="waste-management.html">Junk Removal</a></li>
+            </ul>
+          </div>
+          <!-- Contact -->
+          <div>
+            <h3>Contact Us</h3>
+            <ul class="footer-list">
+              <li><a href="tel:+14783028815">(478) 302-8815</a></li>
+              <li>
+                <a href="mailto:youremail@domain.com">youremail@domain.com</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Follow -->
+          <div>
+            <h3>Follow Us</h3>
+            <ul class="social-list">
+              <li>
+                <a
+                  aria-label="Facebook"
+                  class="social-link"
+                  href="https://www.facebook.com/profile.php?id=61576941093577&amp;mibextid=wwXIfr&amp;rdid=H2EJJz2gerYbssPw&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17nY7MvEBQ%2F%3Fmibextid%3DwwXIfr#"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="social-icon"
+                    viewbox="0 0 24 24"
+                  >
+                    <path
+                      d="M22 12a10 10 0 1 0-11.56 9.88v-7H7.9V12h2.54V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.88h-2.34v7A10 10 0 0 0 22 12z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                  <span>NextCut Land Solutions</span>
+                </a>
+              </li>
+              <li>
+                <a aria-label="Instagram" class="social-link" href="#">
+                  <svg
+                    aria-hidden="true"
+                    class="social-icon"
+                    viewbox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.75 6a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 17.75 6z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                  <span>@nextcutlandsolutions</span>
+                </a>
+              </li>
+              <li>
+                <a aria-label="TikTok" class="social-link" href="#">
+                  <svg
+                    aria-hidden="true"
+                    class="social-icon"
+                    viewbox="0 0 24 24"
+                  >
+                    <path
+                      d="M16.5 2h-2.2v13.2a2.7 2.7 0 1 1-2.7-2.7c.3 0 .6 0 .9.1V10c-.3 0-.6-.1-.9-.1A5.2 5.2 0 1 0 15 15.1V8.2c1.1 1.1 2.6 1.8 4.2 1.8V7.7c-1.6 0-2.9-1-3.4-2.5-.2-.5-.3-1.1-.3-1.7z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                  <span>@nextcutlandsolutions</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- Follow -->
-        <div>
-          <h3>Follow Us</h3>
-          <ul class="social-list">
-            <li>
-              <a aria-label="Facebook" class="social-link"
-                href="https://www.facebook.com/profile.php?id=61576941093577&amp;mibextid=wwXIfr&amp;rdid=H2EJJz2gerYbssPw&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17nY7MvEBQ%2F%3Fmibextid%3DwwXIfr#">
-                <svg aria-hidden="true" class="social-icon" viewbox="0 0 24 24">
-                  <path
-                    d="M22 12a10 10 0 1 0-11.56 9.88v-7H7.9V12h2.54V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.88h-2.34v7A10 10 0 0 0 22 12z"
-                    fill="currentColor"></path>
-                </svg>
-                <span>NextCut Land Solutions</span>
-              </a>
-            </li>
-            <li>
-              <a aria-label="Instagram" class="social-link" href="#">
-                <svg aria-hidden="true" class="social-icon" viewbox="0 0 24 24">
-                  <path
-                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.75 6a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 17.75 6z"
-                    fill="currentColor"></path>
-                </svg>
-                <span>@nextcutlandsolutions</span>
-              </a>
-            </li>
-            <li>
-              <a aria-label="TikTok" class="social-link" href="#">
-                <svg aria-hidden="true" class="social-icon" viewbox="0 0 24 24">
-                  <path
-                    d="M16.5 2h-2.2v13.2a2.7 2.7 0 1 1-2.7-2.7c.3 0 .6 0 .9.1V10c-.3 0-.6-.1-.9-.1A5.2 5.2 0 1 0 15 15.1V8.2c1.1 1.1 2.6 1.8 4.2 1.8V7.7c-1.6 0-2.9-1-3.4-2.5-.2-.5-.3-1.1-.3-1.7z"
-                    fill="currentColor"></path>
-                </svg>
-                <span>@nextcutlandsolutions</span>
-              </a>
-            </li>
-          </ul>
+        <div class="footer-meta">
+          <p class="footer-small">
+            © <span id="year"></span> NextCut Land Solutions
+          </p>
         </div>
       </div>
-      <div class="footer-meta">
-        <p class="footer-small">© <span id="year"></span> NextCut Land Solutions</p>
-      </div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
-  <script>const hamburgerBtn = document.getElementById("hamburgerBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      const hamburgerBtn = document.getElementById("hamburgerBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
 
-    hamburgerBtn.addEventListener("click", () => {
-      const isOpen = mobileMenu.classList.toggle("open");
-      hamburgerBtn.setAttribute("aria-expanded", String(isOpen));
-    });
+      hamburgerBtn.addEventListener("click", () => {
+        const isOpen = mobileMenu.classList.toggle("open");
+        hamburgerBtn.setAttribute("aria-expanded", String(isOpen));
+      });
 
-    // Close menu when clicking a link (optional but nice)
-    mobileMenu.addEventListener("click", (e) => {
-      if (e.target.tagName === "A") {
-        mobileMenu.classList.remove("open");
-        hamburgerBtn.setAttribute("aria-expanded", "false");
-      }
-    });
+      // Close menu when clicking a link (optional but nice)
+      mobileMenu.addEventListener("click", (e) => {
+        if (e.target.tagName === "A") {
+          mobileMenu.classList.remove("open");
+          hamburgerBtn.setAttribute("aria-expanded", "false");
+        }
+      });
 
-    // If you resize wider than 600px, ensure the menu closes
-    window.addEventListener("resize", () => {
-      if (window.innerWidth > 600) {
-        mobileMenu.classList.remove("open");
-        hamburgerBtn.setAttribute("aria-expanded", "false");
-      }
-    });</script>
-</body>
-
+      // If you resize wider than 600px, ensure the menu closes
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 600) {
+          mobileMenu.classList.remove("open");
+          hamburgerBtn.setAttribute("aria-expanded", "false");
+        }
+      });
+    </script>
+  </body>
 </html>
